@@ -53,7 +53,7 @@ print ('''
 print("\n \n \n")
 print ("Witam wszystkich serdecznie! Ja nazywam się Hubert Urbański, a to jest nasz dzisiejszy gość! Powiedz nam jak masz na imię?")
 imie_gracza=input()
-os.system('cls')
+os.system('cls') #czy ktoś wie czemu wyskakuje mi cls not found?
 print("Miło mi cię gościć", imie_gracza, " w naszym teleturnieju Milionerzy. Skąd jesteś?")
 miasto_gracza=input()
 os.system('cls')
