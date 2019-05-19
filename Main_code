@@ -1,0 +1,72 @@
+#import termcolor
+#from termcolor import colored
+import time
+import os
+#FUNKCJE
+
+
+
+
+
+#KOD GŁÓWNY
+print ('''
+$$$\     $$\ $$$$$$\ $$\       $$$$$$\  $$$$$$\  $$\   $$\ $$$$$$$$\ $$$$$$$\  $$$$$$$$\ $$\     $$\\
+$$$\    $$$ |\_$$  _|$$ |      \_$$  _|$$  __$$\ $$$\  $$ |$$  _____|$$  __$$\ \____$$  |\$$\   $$  |
+$$$$\  $$$$ |  $$ |  $$ |        $$ |  $$ /  $$ |$$$$\ $$ |$$ |      $$ |  $$ |    $$  /  \$$\ $$  /
+$$\$$\$$ $$ |  $$ |  $$ |        $$ |  $$ |  $$ |$$ $$\$$ |$$$$$\    $$$$$$$  |   $$  /    \$$$$  /
+$$ \$$$  $$ |  $$ |  $$ |        $$ |  $$ |  $$ |$$ \$$$$ |$$  __|   $$  __$$<   $$  /      \$$  /
+$$ |\$  /$$ |  $$ |  $$ |        $$ |  $$ |  $$ |$$ |\$$$ |$$ |      $$ |  $$ | $$  /        $$ |
+$$ | \_/ $$ |$$$$$$\ $$$$$$$$\ $$$$$$\  $$$$$$  |$$ | \$$ |$$$$$$$$\ $$ |  $$ |$$$$$$$$\     $$ |
+\__|     \__|\______|\________|\______| \______/ \__|  \__|\________|\__|  \__|\________|    \__|
+
+''')
+#Tutaj muzyczka
+time.sleep(4)
+os.system('cls')
+print ('''
+
+                                          ...,;;;,,..
+                                     .,;:ldxxkOOOkxdlc;.
+                                  .:odxxxxxxxxddollcccclc,.
+                                 .codoodxxxxxdlcclllllloolc;.
+                                 ;lclllooooooooooooollccc:::.
+                                 ,:;;:llloddddddooolllclcc:;.
+                                .:l::coddxxxxxxdooollccccc:;.
+                                 .c:cloddxxxkxxdooollcc:::;:,
+                                 .,;:clodddxxxxddooolcc:;;;;;..
+                                  .,:cloddxxxxxdlcc:::::;;;;;;;;.
+                                  ..;;:clloddl:,.,,,,;:c::;,.;cl.
+                                  ......,,:ldl:::::::clc:;;,;co:.
+                                  .;:,;;:lllooloooooddol:;,.,c:.
+                                   .;:cloolloollodddddoc:;,...
+                                    .,loddlloo:;cooolcc:;;,..
+                                     .;cccc;...,cool:ccc:;..
+                                      .:cc::,.;:::::cll:;,.
+                                       .:lc:;;;;:::cooc;;.
+                                        .;:ccccclllool;,.
+                                   ....  .,:cllooooll;.....     ...
+                           ............. .;;,;;;;,... ..:l;.    ........
+                     ................... .odc.....   ..lxd,          ........
+                  .......           ...  .lOkl....... .lxc.                      .
+                 .                 ...  ..c0XKOd:....;kKx.
+                                        ..:0KKKOo.  .oKd. ''')
+print("\n \n \n")
+print ("Witam wszystkich serdecznie! Ja nazywam się Hubert Urbański, a to jest nasz dzisiejszy gość! Powiedz nam jak masz na imię?")
+imie_gracza=input()
+os.system('cls')
+print("Miło mi cię gościć", imie_gracza, " w naszym teleturnieju Milionerzy. Skąd jesteś?")
+miasto_gracza=input()
+os.system('cls')
+print("To cudownie! Wszyscy cię dziś wspieramy. Czy jesteś gotów zgarnąć MILION ZŁOTYCH? Wciśnij ENTER aby rozpocząć!")
+input()
+#Tutaj muzyczka
+os.system('cls')
+print("Losujemy pierwsze pytanie!")
+#tu rozpocząć moduł wtrąceń Huberta
+#dlaczego poniższy kod mi nie działa? nie wypisuje elementów po sobie, tylko po odczekaniu 5 sekund wrzuca 5 kropek naraz
+for i in range (0,5):
+    print(".", end="")
+    time.sleep(1)
+#wyświetlenie pytania
+#wyświetlenie wyboru odpowiedzi
+#c.d. kodu 
