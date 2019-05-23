@@ -163,11 +163,12 @@ os.system('cls')
 print("Losujemy pierwsze pytanie!")
 
 #dlaczego poniższy kod mi nie działa? nie wypisuje elementów po sobie, tylko po odczekaniu 5 sekund wrzuca 5 kropek naraz
-for i in range (0,5):
-    print(".", end="")
-    time.sleep(1)
+
 
 for i in range (1,13):
+    for i in range (0,5):
+        print(".")
+        time.sleep(1)
     wybrany=random.choice(lista_pytań)
     lista_pytań.remove(wybrany)
     print("wciśnij 'p' aby wylosować pytanie!")
