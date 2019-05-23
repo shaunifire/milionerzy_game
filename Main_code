@@ -1,6 +1,11 @@
 import time
 import os
+import pygame
+from pygame import mixer
 #FUNKCJE I ZMIENNE
+mixer.init()
+pygame.init()
+
 pula_odpowiedzi=[[0,1,2,3],[0,1,3,2],[0,2,1,3],[0,2,3,1],[0,3,1,2],[0,3,2,1],[1,0,2,3],[1,0,3,2],[1,2,0,3],[1,2,3,0],[1,3,0,2],[1,3,2,0],
 [2,0,1,3],[2,0,3,1],[2,1,0,3],[2,1,3,0],[2,3,0,1],[2,3,1,0],[3,0,1,2],[3,0,2,1],[3,1,0,2],[3,1,2,0],[3,2,0,1],[3,2,1,0]] #wszystkie kombinacje A,B,C,D zapisane jako 0,1,2,3 żeby pasowało do numeru pozycji na liśćie
 import random #Lista pytań to lista w liście, gdzie na pozycji 0 jest pytanie 1 odpowiedź do niego 2 numer porządkowy pytania
@@ -150,6 +155,8 @@ print ('''
                  .                 ...  ..c0XKOd:....;kKx.
                                         ..:0KKKOo.  .oKd. ''')
 print("\n \n \n")
+pygame.mixer.music.load("Czołóweczka.wav")
+pygame.mixer.music.play(1)
 print ("Witam wszystkich serdecznie! Ja nazywam się Hubert Urbański, a to jest nasz dzisiejszy gość! Powiedz nam jak masz na imię?")
 imie_gracza=input()
 os.system('cls') #czy ktoś wie czemu wyskakuje mi cls not found?
@@ -158,9 +165,12 @@ miasto_gracza=input()
 os.system('cls')
 print("To cudownie! Wszyscy cię dziś wspieramy. Czy jesteś gotów zgarnąć MILION ZŁOTYCH? Wciśnij ENTER aby rozpocząć!")
 input()
-#Tutaj muzyczka
+pygame.mixer.music.stop()
 os.system('cls')
+time.sleep(2)
 print("Losujemy pierwsze pytanie!")
+pygame.mixer.music.load("Constant.wav")
+pygame.mixer.music.play(-1)
 
 #dlaczego poniższy kod mi nie działa? nie wypisuje elementów po sobie, tylko po odczekaniu 5 sekund wrzuca 5 kropek naraz
 for i in range (0,5):
@@ -186,6 +196,7 @@ for i in range (1,13):
         print("Odpowiedź C: ",answers[int(wybrany[2])][C])
         print("Odpowiedź D: ",answers[int(wybrany[2])][D])
         odp1=input()
+        pygame.mixer.music.stop()
         if odp1==wybrany[1]: #wybrany[1] to poprawna odpowiedź, która jest zawarta w liście pytań
             print("Brawo, to jest poprawna odpowiedź!")
             ilosc_pieniedzy=Progi(ilosc_pieniedzy,i,1)
@@ -197,6 +208,7 @@ for i in range (1,13):
             break
 
     elif znak == 'q':
+        pygame.mixer.music.stop()
         ilosc_pieniedzy=Progi(ilosc_pieniedzy,i,1,0)
-        print ("Zarobiłeś już", ilosc_pieniedzy,"złotych!")
+        print ("Niestety musimy się pożegnać!")
         break
