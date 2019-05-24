@@ -108,26 +108,8 @@ def Progi (piniodz, nr_pytania, poprawnosc,gradalej=1): #Funkcja odpowiedzialna 
         pass
     return piniodz
 
-
-
-
-
-#KOD GŁÓWNY
-print ('''
-$$$\     $$\ $$$$$$\ $$\       $$$$$$\  $$$$$$\  $$\   $$\ $$$$$$$$\ $$$$$$$\  $$$$$$$$\ $$\     $$\\
-$$$\    $$$ |\_$$  _|$$ |      \_$$  _|$$  __$$\ $$$\  $$ |$$  _____|$$  __$$\ \____$$  |\$$\   $$  |
-$$$$\  $$$$ |  $$ |  $$ |        $$ |  $$ /  $$ |$$$$\ $$ |$$ |      $$ |  $$ |    $$  /  \$$\ $$  /
-$$\$$\$$ $$ |  $$ |  $$ |        $$ |  $$ |  $$ |$$ $$\$$ |$$$$$\    $$$$$$$  |   $$  /    \$$$$  /
-$$ \$$$  $$ |  $$ |  $$ |        $$ |  $$ |  $$ |$$ \$$$$ |$$  __|   $$  __$$<   $$  /      \$$  /
-$$ |\$  /$$ |  $$ |  $$ |        $$ |  $$ |  $$ |$$ |\$$$ |$$ |      $$ |  $$ | $$  /        $$ |
-$$ | \_/ $$ |$$$$$$\ $$$$$$$$\ $$$$$$\  $$$$$$  |$$ | \$$ |$$$$$$$$\ $$ |  $$ |$$$$$$$$\     $$ |
-\__|     \__|\______|\________|\______| \______/ \__|  \__|\________|\__|  \__|\________|    \__|
-
-''')
-#Tutaj muzyczka
-time.sleep(4)
-os.system('cls')
-print ('''
+def Hubercik():
+    print ('''
 
                                           ...,;;;,,..
                                      .,;:ldxxkOOOkxdlc;.
@@ -155,11 +137,46 @@ print ('''
                  .                 ...  ..c0XKOd:....;kKx.
                                         ..:0KKKOo.  .oKd. ''')
 print("\n \n \n")
-pygame.mixer.music.load("Czołóweczka.wav")
-pygame.mixer.music.play(1)
+
+def Hubercik_gada():
+    odp1=input()
+    gadki=["","","","","","","","",""]
+    wybor=random.randint(0,6)
+    print (gadki[wybor],"Wpisz TAK, jeśli chcesz potwierdzić odpowiedź! Wpisz NIE, aby zmienić odpowiedź!")
+    odpowiedz=input()
+    if odpowiedz=="TAK":
+        pass
+    elif odpowiedz=="NIE":
+        odp1=input()
+    return odp1
+
+
+
+
+
+#KOD GŁÓWNY
+print ('''
+$$$\     $$\ $$$$$$\ $$\       $$$$$$\  $$$$$$\  $$\   $$\ $$$$$$$$\ $$$$$$$\  $$$$$$$$\ $$\     $$\\
+$$$\    $$$ |\_$$  _|$$ |      \_$$  _|$$  __$$\ $$$\  $$ |$$  _____|$$  __$$\ \____$$  |\$$\   $$  |
+$$$$\  $$$$ |  $$ |  $$ |        $$ |  $$ /  $$ |$$$$\ $$ |$$ |      $$ |  $$ |    $$  /  \$$\ $$  /
+$$\$$\$$ $$ |  $$ |  $$ |        $$ |  $$ |  $$ |$$ $$\$$ |$$$$$\    $$$$$$$  |   $$  /    \$$$$  /
+$$ \$$$  $$ |  $$ |  $$ |        $$ |  $$ |  $$ |$$ \$$$$ |$$  __|   $$  __$$<   $$  /      \$$  /
+$$ |\$  /$$ |  $$ |  $$ |        $$ |  $$ |  $$ |$$ |\$$$ |$$ |      $$ |  $$ | $$  /        $$ |
+$$ | \_/ $$ |$$$$$$\ $$$$$$$$\ $$$$$$\  $$$$$$  |$$ | \$$ |$$$$$$$$\ $$ |  $$ |$$$$$$$$\     $$ |
+\__|     \__|\______|\________|\______| \______/ \__|  \__|\________|\__|  \__|\________|    \__|
+
+''')
+#Tutaj muzyczka
+time.sleep(4)
+os.system('cls')
+Hubercik()
+print("\n \n \n")
+#pygame.mixer.music.load("Czołóweczka.wav")
+#pygame.mixer.music.play(1)
 print ("Witam wszystkich serdecznie! Ja nazywam się Hubert Urbański, a to jest nasz dzisiejszy gość! Powiedz nam jak masz na imię?")
 imie_gracza=input()
-os.system('cls') #czy ktoś wie czemu wyskakuje mi cls not found?
+os.system('cls')
+Hubercik()
 print("Miło mi cię gościć", imie_gracza, " w naszym teleturnieju Milionerzy. Skąd jesteś?")
 miasto_gracza=input()
 os.system('cls')
@@ -168,22 +185,19 @@ input()
 pygame.mixer.music.stop()
 os.system('cls')
 time.sleep(2)
-print("Losujemy pierwsze pytanie!")
-pygame.mixer.music.load("Constant.wav")
-pygame.mixer.music.play(-1)
 
-#dlaczego poniższy kod mi nie działa? nie wypisuje elementów po sobie, tylko po odczekaniu 5 sekund wrzuca 5 kropek naraz
-
-
-for i in range (1,13):
-    for i in range (0,5):
-        print(".")
-        time.sleep(1)
+#pygame.mixer.music.load("Constant.wav")
+#pygame.mixer.music.play(-1)
+while len(lista_pytań)>0:
     wybrany=random.choice(lista_pytań)
     lista_pytań.remove(wybrany)
     print("wciśnij 'p' aby wylosować pytanie!")
     print("wciśnij 'q by zakończyć'")
-    znak = input()
+    znak=input()
+    print("Losujemy pytanie!")
+    for i in range (0,5):
+        print(".")
+        time.sleep(1)
     if znak == 'p':
         print(wybrany[0]) #wybrany zero to wybrane pytanie i pozycja 0 listy czyli jego treść
         odpowiedzi_do_pytania=pula_odpowiedzi[random.randint(0,23)] #losujemy jedną z 24 niepowtarzalnych kolejności liter ABCD zmienna odpowiedzi_do_pytania ma więc postać jednej z list pula_odpowiedzi np. [0,2,3,1]
@@ -196,8 +210,8 @@ for i in range (1,13):
         print("Odpowiedź B: ",answers[int(wybrany[2])][B]) #jako drugą itd.
         print("Odpowiedź C: ",answers[int(wybrany[2])][C])
         print("Odpowiedź D: ",answers[int(wybrany[2])][D])
-        odp1=input()
-        pygame.mixer.music.stop()
+        odp1=Hubercik_gada()
+        #pygame.mixer.music.stop()
         if odp1==wybrany[1]: #wybrany[1] to poprawna odpowiedź, która jest zawarta w liście pytań
             print("Brawo, to jest poprawna odpowiedź!")
             ilosc_pieniedzy=Progi(ilosc_pieniedzy,i,1)
@@ -209,7 +223,9 @@ for i in range (1,13):
             break
 
     elif znak == 'q':
-        pygame.mixer.music.stop()
+        #pygame.mixer.music.stop()
         ilosc_pieniedzy=Progi(ilosc_pieniedzy,i,1,0)
         print ("Niestety musimy się pożegnać!")
         break
+
+
