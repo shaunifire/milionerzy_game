@@ -6,4 +6,4 @@ Anna Szewczyk (shaunifire)
 Kornelia Gorzycka (uploaded her part offline through Anna Szewczyk's account
 Mikołaj (giomio)
 Waldemar Wojna (Elvarius)
-Mateusz
+Mateusz Przystałowski (MPrzystalowski)
