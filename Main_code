@@ -140,7 +140,7 @@ print("\n \n \n")
 
 def Hubercik_gada(imie=imie):
     odp1=input()
-    gadki=["Wydajesz się pewną siebie osobą", imie, ", a to może źle wróżyć.","Zastanów się jeszcze raz", imie, ". Nikt nie mierzy tutaj czasu - nie ważne, ile go upłynie, ważna jest odpowiedź!","Weź swój czas, jak to mówią. Pamiętaj, masz go wiele, a odpowiedź tylko jedną. Jesteś pewien, że jest prawidłowa? ","Wierzysz swojej intuicji?","Dziś jest piękny dzień, szkoda by było gdybyś wyszedł z pustymi rękami... Na pewno chcesz udzielić takiej odpowiedzi?","","","",""]
+    gadki=["Wydajesz się pewną siebie osobą", imie, ", a to może źle wróżyć.","Zastanów się jeszcze raz", imie, ". Nikt nie mierzy tutaj czasu - nie ważne, ile go upłynie, ważna jest odpowiedź!","Weź swój czas, jak to mówią. Pamiętaj, masz go wiele, a odpowiedź tylko jedną. Jesteś pewien, że jest prawidłowa? ","Wierzysz swojej intuicji?","Dziś jest piękny dzień, szkoda by było gdybyś wyszedł z pustymi rękami... Na pewno chcesz udzielić takiej odpowiedzi?","Czy ta odpowiedź jest prawidłowa? Zastanów się!","Jesteś pewny?","Ja bym się jeszcze chwilę zastanowił...",""]
     wybor=random.randint(0,6)
     print (gadki[wybor],"Wpisz TAK, jeśli chcesz potwierdzić odpowiedź! Wpisz NIE, aby zmienić odpowiedź!")
     odpowiedz=input()
