@@ -12,9 +12,8 @@ prawdopodobienstwo_poprawnej_odpowiedzi=0
 pula_odpowiedzi=[[0,1,2,3],[0,1,3,2],[0,2,1,3],[0,2,3,1],[0,3,1,2],[0,3,2,1],[1,0,2,3],[1,0,3,2],[1,2,0,3],[1,2,3,0],[1,3,0,2],[1,3,2,0],
 [2,0,1,3],[2,0,3,1],[2,1,0,3],[2,1,3,0],[2,3,0,1],[2,3,1,0],[3,0,1,2],[3,0,2,1],[3,1,0,2],[3,1,2,0],[3,2,0,1],[3,2,1,0]] #wszystkie kombinacje A,B,C,D zapisane jako 0,1,2,3 żeby pasowało do numeru pozycji na liśćie
 import random #Lista pytań to lista w liście, gdzie na pozycji 0 jest pytanie 1 odpowiedź do niego 2 numer porządkowy pytania
-lista_pytań=[["Rybą nie jest:","uchatka","0"],["Który instrument stroi muzyk?","gitarę","1"],["Likier maraskino produkuje się z maraski, czyli odmiany:","wiśni","2"],["Skąd pochodzi Conan Barbarzyńca?","Z Cymerii","3"],["Który utwór Juliusza Słowackiego napisany jest prozą?","Anhelli","4"],["Ile to jest 1111 razy 1111, jeśli 1 razy 1 to 1, a 11 razy 11 to 121?","1234321","5"],["Który ssak się nie spoci?","królik","6"], ["Komiksowym „dzieckiem” rysownika Boba Kane’a jest:", "Batman","7"],["Kto jest mistrzem tego samego oręża, w jakim specjalizowała się mitologiczna Artemida?,"Zorro","8"],["Kto był nadwornym malarzem króla Filipa IV Habsburga?","Diego Velázquez","9"],["Z gry na jakim instrumencie słynie Czesław Mozil?","Na akordeonie","10"],["Płetwą grzbietową nie pruje wody:","wal grenlandzki","11"],["Co według Leszka Kołakowskiego jest sklepieniem domu, w którym duch ludzki mieszka?","Czas","12"]]
-answers=[["piskorz","pstrąg","ryba tygrysia","uchatka"],["gitarę","bęben","perkusję","batutę"],["winogron","wiśni","pszenicy","czereśni"],["Z gór Ural","Z Egiptu","Z Cymerii","Z Salaminy"],["Godzina myśli","W Szwajcarii","Anhelli","Arab"],["1111111","1212121","1234321","1231321"],["owca","koń","człowiek","królik"],["Superman","Batman","Spider-man","Capitan Ameryka"],["Zorro","Legolas","Don Kichot","Longinus Podbipięta"],[" Marcello Bacciarelli","Jan van Eyck"," Diego Velázquez","Jacques-Louis David"],["na kornecie"," na akordeonie","na djembe","na ksylofonie"],["długoszpar"," kosogon","orka","wal grenlandzki"],["Rozum","Bóg","Miłość","Czas
-"]]
+lista_pytań=[["Rybą nie jest:","uchatka","0"],["Który instrument stroi muzyk?","gitarę","1"],["Likier maraskino produkuje się z maraski, czyli odmiany:","wiśni","2"],["Skąd pochodzi Conan Barbarzyńca?","Z Cymerii","3"],["Który utwór Juliusza Słowackiego napisany jest prozą?","Anhelli","4"],["Ile to jest 1111 razy 1111, jeśli 1 razy 1 to 1, a 11 razy 11 to 121?","1234321","5"],["Który ssak się nie spoci?","królik","6"], ["Komiksowym „dzieckiem” rysownika Boba Kane’a jest:", "Batman","7"],["Kto jest mistrzem tego samego oręża, w jakim specjalizowała się mitologiczna Artemida?","Zorro","8"],["Kto był nadwornym malarzem króla Filipa IV Habsburga?","Diego Velázquez","9"],["Z gry na jakim instrumencie słynie Czesław Mozil?","Na akordeonie","10"],["Płetwą grzbietową nie pruje wody:","wal grenlandzki","11"],["Co według Leszka Kołakowskiego jest sklepieniem domu, w którym duch ludzki mieszka?","Czas","12"]]
+answers=[["piskorz","pstrąg","ryba tygrysia","uchatka"],["gitarę","bęben","perkusję","batutę"],["winogron","wiśni","pszenicy","czereśni"],["Z gór Ural","Z Egiptu","Z Cymerii","Z Salaminy"],["Godzina myśli","W Szwajcarii","Anhelli","Arab"],["1111111","1212121","1234321","1231321"],["owca","koń","człowiek","królik"],["Superman","Batman","Spider-man","Capitan Ameryka"],["Zorro","Legolas","Don Kichot","Longinus Podbipięta"],[" Marcello Bacciarelli","Jan van Eyck"," Diego Velázquez","Jacques-Louis David"],["na kornecie"," na akordeonie","na djembe","na ksylofonie"],["długoszpar"," kosogon","orka","wal grenlandzki"],["Rozum","Bóg","Miłość","Czas"]]
 ilosc_pieniedzy=0
 def Progi (piniodz, nr_pytania, poprawnosc,gradalej=1): #Funkcja odpowiedzialna za pieniądze, które posiadamy po danym pytaniu. Odpowiada ona również za progi punktowe i końcowe pieniądze. Jeśli osoba rezygnuje to do deklaracji funkcji dodajemy zmienną "gradalej=0"
 #Deklaruję początkową wartość pieniędzy. Same działanie funkcji zawsze przypisujemy wartości pieniędzy, gdyż będzie to jedyna wartość returnowana - robię to prostą rekurencją
@@ -23,94 +22,95 @@ def Progi (piniodz, nr_pytania, poprawnosc,gradalej=1): #Funkcja odpowiedzialna 
 # ilość_pieniędzy=progi(ilosc_pieniedzy,1,1)
 # Jeśli dana osoba rezygnuje przy pytaniu 7 to:
 # ilosc_pieniedzy=progi(ilosc_pieniedzy,7,0,gradalej=0)
+    a=piniodz
     if gradalej==1: #Jest to sprawdzenie czy dana osoba gra dalej czy rezygnuje z rozgrywki i bierze wszystko ze sobą
-        if nr_pytania==1: #Warunki odpowiadające pytaniom
+        if nr_pytania==12: #Warunki odpowiadające pytaniom
             if poprawnosc==1: #Warunki odpowiadające poprawności odpowiedzi. Wartości są zapisane algebrą boola (0 vs 1)
-                piniondz+=500 #Dodajemy do początkowej wartości wyznaczoną wartość
+                a+=500 #Dodajemy do początkowej wartości wyznaczoną wartość
                 print("Gratuluję, to jest poprawna odpowiedź!")
             else: #Co się dzieje w przypadku gdy poprawność jest zła
                 print("Czasem i najtrudniejsze pytanie trafia się na początek. Dziękuję za udział!")
                 pass #W tym przypadku mamy już wartość 0 domyślnie
-        elif nr_pytania==2:
+        elif nr_pytania==11:
             if poprawnosc==1:
-                piniondz+=500
+                a+=500
                 print("Tak, jest to dobra odpowiedź! Masz już sumę gwarantowaną w wysokości 1000zł!")
             else:
                 print("Było bardzo blisko. Niestety w tym przypadku muszę Cię pożegnać z niczym.")
-                piniondz=0
-        elif nr_pytania==3:
+                a=0
+        elif nr_pytania==10:
             if poprawnosc==1:
-                piniondz+=1000
+                a+=1000
                 print("Tak, to jest to! 2000zł trafiają do Ciebie!")
             else:
                 print("Liczyłem, że uda Ci się zdobyć znacznie więcej. Gwarantowane 1000zł jest Twoje.")
-                piniodz=1000
-        elif nr_pytania==4:
+                a=1000
+        elif nr_pytania==9:
             if poprawnosc==1:
-                piniondz+=3000
+                a+=3000
                 print("I kolejne pieniądze lądują w Twoim portfelu! 5000zł to już niezła sumka.")
             else:
                 print("Niestety była to nieprawidłowa odpowiedź. Zgodnie z regulaminem programu należy Ci się 1000zł.")
-                piniodz=1000
-        elif nr_pytania==5:
-            if poprawnosc==1:
-                print("Piąte pytanie za Tobą! 10 000zł jest już Twoje.")
-                piniondz+=5000
-            else:
-                print("Gdybyś zaufał swoim wcześniejszym zamierzeniom grałbyś dalej. Mój drogi, 1000zł wraca z Tobą do domu.")
-                piniodz=1000
-        elif nr_pytania==6:
-            if poprawnosc==1:
-                print("Gratulacje! Jesteś już w połowie drogi do upragnionego miliona!")
-                piniondz+=10000
-            else:
-                print("Było tak blisko! Bardzo przyjemnie było mi Cię tu gościć w studiu. Mogę Ci jedynie zaoferować 1000zł gwarantowane na otarcie łez.")
-                piniodz=1000
-        elif nr_pytania==7:
-            if poprawnosc==1:
-                print("Nie do wiary! Masz już gwarantowane dokładnie 40 000zł!")
-                piniondz+=20000
-            else:
-                print("To nie była pawidłowa odpowiedź. Czasem nie wychodzi nawet gdy szczęście jest na wysiągnięcie ręki.")
-                piniodz=1000
+                a=1000
         elif nr_pytania==8:
             if poprawnosc==1:
+                print("Piąte pytanie za Tobą! 10 000zł jest już Twoje.")
+                a+=5000
+            else:
+                print("Gdybyś zaufał swoim wcześniejszym zamierzeniom grałbyś dalej. Mój drogi, 1000zł wraca z Tobą do domu.")
+                a=1000
+        elif nr_pytania==7:
+            if poprawnosc==1:
+                print("Gratulacje! Jesteś już w połowie drogi do upragnionego miliona!")
+                a+=10000
+            else:
+                print("Było tak blisko! Bardzo przyjemnie było mi Cię tu gościć w studiu. Mogę Ci jedynie zaoferować 1000zł gwarantowane na otarcie łez.")
+                a=1000
+        elif nr_pytania==6:
+            if poprawnosc==1:
+                print("Nie do wiary! Masz już gwarantowane dokładnie 40 000zł!")
+                a+=20000
+            else:
+                print("To nie była pawidłowa odpowiedź. Czasem nie wychodzi nawet gdy szczęście jest na wysiągnięcie ręki.")
+                a=1000
+        elif nr_pytania==5:
+            if poprawnosc==1:
                 print("Przyznam szczerze, że nie potrafiłbym odpowiedzieć na to pytanie na Twoim miejscu. W tym programie doceniamy jednak poprawne odpowiedzi, dlatego 75 000 jest już Twoje!")
-                piniondz+=35000
+                a+=35000
             else:
                 print("Zła wiadomość to taka, że to jest błędna odpowiedź. Dobra jest taka, że nie tracisz nic. 40 000 jest Twoje!")
-                piniodz=40000
-        elif nr_pytania==9:
+                a=40000
+        elif nr_pytania==4:
             if poprawnosc==1:
                 print("Jak Ty to robisz? 125 000zł to Twój aktualny stan portfela. Mam nadzieję, że będzie tylko co raz lepiej!")
-                piniondz+=50000
+                a+=50000
             else:
                 print("Ajjj.. Miałeś jednak błędną intuicję. Dziękuję Ci serdecznie za udział. 40 000zł jest Twoje")
-                piniodz=40000
-        elif nr_pytania==10:
+                a=40000
+        elif nr_pytania==3:
             if poprawnosc==1:
                 print("Nie sa mo wi te! Przebiłeś się bez problemu przez dotychczasowe pytania! Zostały jeszcze tylko 2 do miliona!")
-                piniondz+=125000
+                a+=125000
             else:
                 print("Niestety! Mój drogi, przebyliśmy razem długą drogę, która mam nadzieję się opłaci. 40 000zł wraca z Tobą do domu!")
-                piniodz=40000
-        elif nr_pytania==11:
+                a=40000
+        elif nr_pytania==2:
             if poprawnosc==1:
                 print("Tak! To jest definitywnie dobra odpowiedź! 500 000zł jest już Twoje! Teraz możesz podwoić swój dotychczasowy dorobek! Przed nami ostatnie pytanie!")
-                piniondz+=250000
+                a+=250000
             else:
                 print("Muszę Cię zmartwić. Odpowiedź którą wybrałeś nie jest poprawna. Żałuję razem z Tobą, milion był na wyciągnięcie ręki!")
-                piniodz=40000
+                a=40000
         else:
             if poprawnosc==1:
-                piniondz+=500000
+                a+=500000
                 print("Muszę Cię zmartwić.. Musisz zmienić swoje plany życiowe, gdyż właśnie wygrałeś MILION złotych! Tym samym stałeś się czwartą osobą w historii, która tego dokonała!")
             else:
                 print("Nie wiem co powiedzieć. Milion był tak blisko. Niestety muszę pożegnać Cię z 40 000zł. Do zobaczenia")
-                piniodz=40000
+                a=40000
     else:
-        pass
-    return piniodz
+        print("Dziękuję za udział w programie!")
+    return a
 
 def Hubercik():
     print ('''
@@ -190,8 +190,8 @@ time.sleep(4)
 os.system('cls')
 Hubercik()
 print("\n \n \n")
-#pygame.mixer.music.load("Czołóweczka.wav")
-#pygame.mixer.music.play(1)
+pygame.mixer.music.load("Czołóweczka.wav")
+pygame.mixer.music.play(1)
 print ("Witam wszystkich serdecznie! Ja nazywam się Hubert Urbański, a to jest nasz dzisiejszy gość! Powiedz nam jak masz na imię?")
 imie=input()
 os.system('cls')
@@ -205,8 +205,8 @@ pygame.mixer.music.stop()
 os.system('cls')
 time.sleep(2)
 
-#pygame.mixer.music.load("Constant.wav")
-#pygame.mixer.music.play(-1)
+pygame.mixer.music.load("Constant.wav")
+pygame.mixer.music.play(-1)
 while len(lista_pytań)>0:
     wybrany=random.choice(lista_pytań)
     lista_pytań.remove(wybrany)
@@ -302,21 +302,20 @@ while len(lista_pytań)>0:
             fifty_fifty=False
             wybor_kola=""
         odp1=Hubercik_gada()
-        #pygame.mixer.music.stop()
+        pygame.mixer.music.stop()
         if odp1==wybrany[1]: #wybrany[1] to poprawna odpowiedź, która jest zawarta w liście pytań
             print("Brawo, to jest poprawna odpowiedź!")
-            ilosc_pieniedzy=Progi(ilosc_pieniedzy,i,1)
+            ilosc_pieniedzy=Progi(ilosc_pieniedzy,len(lista_pytań),1)
             print ("Zarobiłeś już", ilosc_pieniedzy,"złotych!")
         else:
             print("Skucha...")
-            ilosc_pieniedzy=Progi(ilosc_pieniedzy,i,0)
+            ilosc_pieniedzy=Progi(ilosc_pieniedzy,len(lista_pytań),0)
             print ("Zarobiłeś już", ilosc_pieniedzy,"złotych!")
             break
 
     elif znak == 'q':
-        #pygame.mixer.music.stop()
-        ilosc_pieniedzy=Progi(ilosc_pieniedzy,i,1,0)
+        pygame.mixer.music.stop()
+        ilosc_pieniedzy=Progi(ilosc_pieniedzy,len(lista_pytań),1,0)
         print ("Niestety musimy się pożegnać!")
+        print("Wygrałeś łącznie",ilosc_pieniedzy,'złotych!')
         break
-
-
