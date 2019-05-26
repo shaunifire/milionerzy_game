@@ -235,6 +235,7 @@ while len(lista_pytań)>0:
         if wybor_kola=="T":
             print("Cześć z tej strony Hubert Urbański twój przyjaciel właśnie gra w programie milionerzy i ma problem z pytaniem:\n",wybrany[0],"Oto możliwe odpowiedzi:\n",answers[int(wybrany[2])],"\n","Masz 30 sekund postaraj się podać prawdziwą odpowiedź!")
             print("Przyjaciel:Hmmm ymmm ummm myslę, że będzie to:",wybrany[1])
+            wybor_kola=""
             telefon=False
         if wybor_kola=="P":
             print("Oto jak na odpowiedzi do twojego pytania zagłosowała publiczność\n",)
@@ -282,6 +283,7 @@ while len(lista_pytań)>0:
                 prawdopodobienstwo_pozostalych_odpowiedzi=prawdopodobienstwo_pozostalych_odpowiedzi-odjemna
                 print(answers[int(wybrany[2])][C],": ",odjemna,"%")
                 print(answers[int(wybrany[2])][D],": ",prawdopodobienstwo_pozostalych_odpowiedzi,"%")
+            wybor_kola=""
             publicznosc=False
         if wybor_kola == "F":
             print("Uff masz 50% szans to czas na twój szczęśliwy strzał.\nPozostałe odpowiedzi to:")
@@ -296,7 +298,8 @@ while len(lista_pytań)>0:
                 answers[int(wybrany[2])].remove(wybrany[1])
                 druga_odpowiedz=random.randint(0,2)
                 print(answers[int(wybrany[2])][druga_odpowiedz],"lub",poprawna_odpowiedz)
-                fifty_fifty=False
+            fifty_fifty=False
+            wybor_kola=""
         odp1=Hubercik_gada()
         #pygame.mixer.music.stop()
         if odp1==wybrany[1]: #wybrany[1] to poprawna odpowiedź, która jest zawarta w liście pytań
