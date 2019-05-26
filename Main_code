@@ -141,9 +141,9 @@ def Hubercik():
                                         ..:0KKKOo.  .oKd. ''')
 print("\n \n \n")
 
-def Hubercik_gada(imie):
+def Hubercik_gada():
     odp1=input()
-    gadki=["Wydajesz się pewną siebie osobą", imie, ", a to może źle wróżyć.","Zastanów się jeszcze raz", imie, ". Nikt nie mierzy tutaj czasu - nie ważne, ile go upłynie, ważna jest odpowiedź!","Weź swój czas, jak to mówią. Pamiętaj, masz go wiele, a odpowiedź tylko jedną. Jesteś pewien, że jest prawidłowa? ","Wierzysz swojej intuicji?","Dziś jest piękny dzień, szkoda by było gdybyś wyszedł z pustymi rękami... Na pewno chcesz udzielić takiej odpowiedzi?","Czy ta odpowiedź jest prawidłowa? Zastanów się!","Jesteś pewny?","Ja bym się jeszcze chwilę zastanowił...",""]
+    gadki=["Wydajesz się pewną siebie osobą, a to może źle wróżyć.","Zastanów się jeszcze raz. Nikt nie mierzy tutaj czasu - nie ważne, ile go upłynie, ważna jest odpowiedź!","Weź swój czas, jak to mówią. Pamiętaj, masz go wiele, a odpowiedź tylko jedną. Jesteś pewien, że jest prawidłowa? ","Wierzysz swojej intuicji?","Dziś jest piękny dzień, szkoda by było gdybyś wyszedł z pustymi rękami... Na pewno chcesz udzielić takiej odpowiedzi?","Czy ta odpowiedź jest prawidłowa? Zastanów się!","Jesteś pewny?","Ja bym się jeszcze chwilę zastanowił...",""]
     wybor=random.randint(0,6)
     print (gadki[wybor],"Wpisz TAK, jeśli chcesz potwierdzić odpowiedź! Wpisz NIE, aby zmienić odpowiedź!")
     odpowiedz=input()
@@ -297,7 +297,7 @@ while len(lista_pytań)>0:
                 druga_odpowiedz=random.randint(0,2)
                 print(answers[int(wybrany[2])][druga_odpowiedz],"lub",poprawna_odpowiedz)
                 fifty_fifty=False
-        odp1=Hubercik_gada(imie)
+        odp1=Hubercik_gada()
         #pygame.mixer.music.stop()
         if odp1==wybrany[1]: #wybrany[1] to poprawna odpowiedź, która jest zawarta w liście pytań
             print("Brawo, to jest poprawna odpowiedź!")
