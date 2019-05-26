@@ -1,14 +1,14 @@
-publicznosc=True
+publicznosc=True #jakies zmienne ktore są potrzebne do zadeklarowania wcześniej bo mi wywalało błąd ta i 4 poniżej
 fifty_fifty=True
 telefon=True
 wybor_kola=""
 prawdopodobienstwo_poprawnej_odpowiedzi=0
-def kola_ratunkowe():
+def kola_ratunkowe(): #po wyświetleniu pytania program pyta czy chcesz użyć kół jeśl tak odpala sie ta funkcja sprawdza czy masz jeszcze jakieś koła wypisuje ci je 
     if publicznosc==False and fifty_fifty==False and telefon ==False:
         print("Niestety wykorzystałeś już wszystkie koła ratunkowe.")
     else:
 
-        print("Masz do dyspozycji następujące koła ratunkowe: ")
+        print("Masz do dyspozycji następujące koła ratunkowe: ")  #wybieramy jedno z kół które jest returnowane z funkcji
         if publicznosc==True:
             print("Pytanie do publiczności. Aby wybrać to koło kliknij P.")
         if fifty_fifty==True:
@@ -41,15 +41,15 @@ while True:
         print("Odpowiedź B: ",answers[int(wybrany[2])][B])
         print("Odpowiedź C: ",answers[int(wybrany[2])][C])
         print("Odpowiedź D: ",answers[int(wybrany[2])][D])
-        print("Czy chcesz z korzystać z pozostałych ci kół ratunkowych?(TAK-T,Nie-dowolny przycisk aby kontynuować)")
-        odpowiedz_kola=input()
+        print("Czy chcesz z korzystać z pozostałych ci kół ratunkowych?(TAK-T,Nie-dowolny przycisk aby kontynuować)") #tutaj pytanie o uzycie kół
+        odpowiedz_kola=input() #tutaj funkcja zwraca jakie koło zostało wybrane i są 3 ify które się włączą jeśli zostało wybrane odpowiednie koło
         if odpowiedz_kola=="T":
             wybor_kola=kola_ratunkowe()
-        if wybor_kola=="T":
+        if wybor_kola=="T": #koło telefon po prostu podaje poprawną odpowiedź przechowywaną w tym samym miejscu to poprawna odpowiedź do sprawdzania odpowiedzi gracza
             print("Cześć z tej strony Hubert Urbański twój przyjaciel właśnie gra w programie milionerzy i ma problem z pytaniem:\n",wybrany[0],"Oto możliwe odpowiedzi:\n",answers[int(wybrany[2])],"\n","Masz 30 sekund postaraj się podać prawdziwą odpowiedź!")
             print("Przyjaciel:Hmmm ymmm ummm myslę, że będzie to:",wybrany[1])
             telefon=False
-        if wybor_kola=="P":
+        if wybor_kola=="P": #tutaj program sprawdza która odpowiedź po wymieszaniu kolejności jest prawidłowa i daje jej 61-95% a kolejnym losuje jakieś procenty tak żeby się sumowały do 100 stąd dużo linijek bo trzeba z każdym razem odejmować od 100 te procenty które już zeszły i pilnować żeby nie przekroczyć 100
             print("Oto jak na odpowiedzi do twojego pytania zagłosowała publiczność\n",)
             if answers[int(wybrany[2])][A]==wybrany[1]:
                 prawdopodobienstwo_poprawnej_odpowiedzi=random.randint(61,95)
@@ -96,9 +96,9 @@ while True:
                 print(answers[int(wybrany[2])][C],": ",odjemna,"%")
                 print(answers[int(wybrany[2])][D],": ",prawdopodobienstwo_pozostalych_odpowiedzi,"%")
             publicznosc=False
-        if wybor_kola == "F":
+        if wybor_kola == "F": #tutaj wrzucamy poprawną odpowiedź do innej zmiennej bo usuwamy ją z listy. dzieki temu mozemy łatwiej wylosować drugą odpowiedź z listy bez obawy że padnie na tę samą więc losujemy z pośród trzech nieprawidłowych
             print("Uff masz 50% szans to czas na twój szczęśliwy strzał.\nPozostałe odpowiedzi to:")
-            kolejnosc=random.randint(1,2)
+            kolejnosc=random.randint(1,2) #no i są dwie kolejności poprawna jako pierwsza lub jako druga 
             if kolejnosc == 1:
                 poprawna_odpowiedz=wybrany[1]
                 answers[int(wybrany[2])].remove(wybrany[1])
