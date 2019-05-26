@@ -1,0 +1,120 @@
+publicznosc=True
+fifty_fifty=True
+telefon=True
+wybor_kola=""
+prawdopodobienstwo_poprawnej_odpowiedzi=0
+def kola_ratunkowe():
+    if publicznosc==False and fifty_fifty==False and telefon ==False:
+        print("Niestety wykorzystałeś już wszystkie koła ratunkowe.")
+    else:
+
+        print("Masz do dyspozycji następujące koła ratunkowe: ")
+        if publicznosc==True:
+            print("Pytanie do publiczności. Aby wybrać to koło kliknij P.")
+        if fifty_fifty==True:
+            print("Pół na pół 50:50. Aby wybrać to koło kliknij F.")
+        if telefon==True:
+            print("Telefon do przyjaciela. Aby wybrać to koło kliknij T.")
+        guzik=input()
+        return guzik
+
+pula_odpowiedzi=[[0,1,2,3],[0,1,3,2],[0,2,1,3],[0,2,3,1],[0,3,1,2],[0,3,2,1],[1,0,2,3],[1,0,3,2],[1,2,0,3],[1,2,3,0],[1,3,0,2],[1,3,2,0],
+[2,0,1,3],[2,0,3,1],[2,1,0,3],[2,1,3,0],[2,3,0,1],[2,3,1,0],[3,0,1,2],[3,0,2,1],[3,1,0,2],[3,1,2,0],[3,2,0,1],[3,2,1,0]]
+import random
+lista_pytań=[["Rybą nie jest:","uchatka","0"],["Który instrument stroi muzyk?","gitarę","1"],["Likier maraskino produkuje się z maraski, czyli odmiany:","wiśni","2"],["Skąd pochodzi Conan Barbarzyńca?","Z Cymerii","3"],["Który utwór Juliusza Słowackiego napisany jest prozą?","Anhelli","4"],["Ile to jest 1111 razy 1111, jeśli 1 razy 1 to 1, a 11 razy 11 to 121?","1234321","5"],["Który ssak się nie spoci?","królik","6"]]
+answers=[["piskorz","pstrąg","ryba tygrysia","uchatka"],["gitarę","bęben","perkusję","batutę"],["winogron","wiśni","pszenicy","czereśni"],["Z gór Ural","Z Egiptu","Z Cymerii","Z Salaminy"],["Godzina myśli","W Szwajcarii","Anhelli","Arab"],["1111111","1212121","1234321","1231321"],["owca","koń","człowiek","królik"]]
+while True:
+    wybrany=random.choice(lista_pytań)
+    lista_pytań.remove(wybrany)
+    print("wciśnij 'p' aby wylosować pytanie")
+    print("wciśnij 'q by zakończyć'")
+    znak = input()
+    if znak == 'p':
+        print(wybrany[0])
+        odpowiedzi_do_pytania=pula_odpowiedzi[random.randint(0,23)]
+        A=odpowiedzi_do_pytania[0]
+        B=odpowiedzi_do_pytania[1]
+        C=odpowiedzi_do_pytania[2]
+        D=odpowiedzi_do_pytania[3]
+        print("Wybierz odpowiedź: ")
+        print("Odpowiedź A: ",answers[int(wybrany[2])][A])
+        print("Odpowiedź B: ",answers[int(wybrany[2])][B])
+        print("Odpowiedź C: ",answers[int(wybrany[2])][C])
+        print("Odpowiedź D: ",answers[int(wybrany[2])][D])
+        print("Czy chcesz z korzystać z pozostałych ci kół ratunkowych?(TAK-T,Nie-dowolny przycisk aby kontynuować)")
+        odpowiedz_kola=input()
+        if odpowiedz_kola=="T":
+            wybor_kola=kola_ratunkowe()
+        if wybor_kola=="T":
+            print("Cześć z tej strony Hubert Urbański twój przyjaciel właśnie gra w programie milionerzy i ma problem z pytaniem:\n",wybrany[0],"Oto możliwe odpowiedzi:\n",answers[int(wybrany[2])],"\n","Masz 30 sekund postaraj się podać prawdziwą odpowiedź!")
+            print("Przyjaciel:Hmmm ymmm ummm myslę, że będzie to:",wybrany[1])
+            telefon=False
+        if wybor_kola=="P":
+            print("Oto jak na odpowiedzi do twojego pytania zagłosowała publiczność\n",)
+            if answers[int(wybrany[2])][A]==wybrany[1]:
+                prawdopodobienstwo_poprawnej_odpowiedzi=random.randint(61,95)
+                print(wybrany[1],": ",prawdopodobienstwo_poprawnej_odpowiedzi,"%")
+                prawdopodobienstwo_pozostalych_odpowiedzi=100-prawdopodobienstwo_poprawnej_odpowiedzi
+                odjemna=random.randint(0,prawdopodobienstwo_pozostalych_odpowiedzi)
+                prawdopodobienstwo_pozostalych_odpowiedzi=prawdopodobienstwo_pozostalych_odpowiedzi-odjemna
+                print(answers[int(wybrany[2])][B],": ",odjemna,"%")
+                odjemna=random.randint(0,prawdopodobienstwo_pozostalych_odpowiedzi)
+                prawdopodobienstwo_pozostalych_odpowiedzi=prawdopodobienstwo_pozostalych_odpowiedzi-odjemna
+                print(answers[int(wybrany[2])][C],": ",odjemna,"%")
+                print(answers[int(wybrany[2])][D],": ",prawdopodobienstwo_pozostalych_odpowiedzi,"%")
+            elif answers[int(wybrany[2])][B]==wybrany[1]:
+                prawdopodobienstwo_poprawnej_odpowiedzi=random.randint(61,95)
+                print(wybrany[1],": ",prawdopodobienstwo_poprawnej_odpowiedzi,"%")
+                prawdopodobienstwo_pozostalych_odpowiedzi=100-prawdopodobienstwo_poprawnej_odpowiedzi
+                odjemna=random.randint(0,prawdopodobienstwo_pozostalych_odpowiedzi)
+                prawdopodobienstwo_pozostalych_odpowiedzi=prawdopodobienstwo_pozostalych_odpowiedzi-odjemna
+                print(answers[int(wybrany[2])][A],": ",odjemna,"%")
+                odjemna=random.randint(0,prawdopodobienstwo_pozostalych_odpowiedzi)
+                prawdopodobienstwo_pozostalych_odpowiedzi=prawdopodobienstwo_pozostalych_odpowiedzi-odjemna
+                print(answers[int(wybrany[2])][C],": ",odjemna,"%")
+                print(answers[int(wybrany[2])][D],": ",prawdopodobienstwo_pozostalych_odpowiedzi,"%")
+            elif answers[int(wybrany[2])][C]==wybrany[1]:
+                prawdopodobienstwo_poprawnej_odpowiedzi=random.randint(61,95)
+                print(wybrany[1],": ",prawdopodobienstwo_poprawnej_odpowiedzi,"%")
+                prawdopodobienstwo_pozostalych_odpowiedzi=100-prawdopodobienstwo_poprawnej_odpowiedzi
+                odjemna=random.randint(0,prawdopodobienstwo_pozostalych_odpowiedzi)
+                prawdopodobienstwo_pozostalych_odpowiedzi=prawdopodobienstwo_pozostalych_odpowiedzi-odjemna
+                print(answers[int(wybrany[2])][B],": ",odjemna,"%")
+                odjemna=random.randint(0,prawdopodobienstwo_pozostalych_odpowiedzi)
+                prawdopodobienstwo_pozostalych_odpowiedzi=prawdopodobienstwo_pozostalych_odpowiedzi-odjemna
+                print(answers[int(wybrany[2])][A],": ",odjemna,"%")
+                print(answers[int(wybrany[2])][D],": ",prawdopodobienstwo_pozostalych_odpowiedzi,"%")
+            elif answers[int(wybrany[2])][D]==wybrany[1]:
+                prawdopodobienstwo_poprawnej_odpowiedzi=random.randint(61,95)
+                print(wybrany[1],": ",prawdopodobienstwo_poprawnej_odpowiedzi,"%")
+                prawdopodobienstwo_pozostalych_odpowiedzi=100-prawdopodobienstwo_poprawnej_odpowiedzi
+                odjemna=random.randint(0,prawdopodobienstwo_pozostalych_odpowiedzi)
+                prawdopodobienstwo_pozostalych_odpowiedzi=prawdopodobienstwo_pozostalych_odpowiedzi-odjemna
+                print(answers[int(wybrany[2])][B],": ",odjemna,"%")
+                odjemna=random.randint(0,prawdopodobienstwo_pozostalych_odpowiedzi)
+                prawdopodobienstwo_pozostalych_odpowiedzi=prawdopodobienstwo_pozostalych_odpowiedzi-odjemna
+                print(answers[int(wybrany[2])][C],": ",odjemna,"%")
+                print(answers[int(wybrany[2])][D],": ",prawdopodobienstwo_pozostalych_odpowiedzi,"%")
+            publicznosc=False
+        if wybor_kola == "F":
+            print("Uff masz 50% szans to czas na twój szczęśliwy strzał.\nPozostałe odpowiedzi to:")
+            kolejnosc=random.randint(1,2)
+            if kolejnosc == 1:
+                poprawna_odpowiedz=wybrany[1]
+                answers[int(wybrany[2])].remove(wybrany[1])
+                druga_odpowiedz=random.randint(0,2)
+                print(poprawna_odpowiedz,"lub",answers[int(wybrany[2])][druga_odpowiedz])
+            else:
+                poprawna_odpowiedz=wybrany[1]
+                answers[int(wybrany[2])].remove(wybrany[1])
+                druga_odpowiedz=random.randint(0,2)
+                print(answers[int(wybrany[2])][druga_odpowiedz],"lub",poprawna_odpowiedz)
+            fifty_fifty=False
+
+        odp1=input()
+        if odp1==wybrany[1]:
+            print("Brawo poprwna odpowiedź!")
+        else:
+            print("Skucha...")
+    elif znak == 'q':
+        break
