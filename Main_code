@@ -297,7 +297,7 @@ while len(lista_pytań)>0:
                 druga_odpowiedz=random.randint(0,2)
                 print(answers[int(wybrany[2])][druga_odpowiedz],"lub",poprawna_odpowiedz)
                 fifty_fifty=False
-        odp1=Hubercik_gada()
+        odp1=Hubercik_gada(imie)
         #pygame.mixer.music.stop()
         if odp1==wybrany[1]: #wybrany[1] to poprawna odpowiedź, która jest zawarta w liście pytań
             print("Brawo, to jest poprawna odpowiedź!")
