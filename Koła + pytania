@@ -1,0 +1,134 @@
+import tkinter as tk
+from tkinter import *
+from tkinter import messagebox
+import random
+import time
+from PIL import Image, ImageTk
+#publicznosc=True
+#fifty_fifty=True
+#telefon=True
+wybor_kola=""
+pula_odpowiedzi=[[0,1,2,3],[0,1,3,2],[0,2,1,3],[0,2,3,1],[0,3,1,2],[0,3,2,1],[1,0,2,3],[1,0,3,2],[1,2,0,3],[1,2,3,0],[1,3,0,2],[1,3,2,0],
+[2,0,1,3],[2,0,3,1],[2,1,0,3],[2,1,3,0],[2,3,0,1],[2,3,1,0],[3,0,1,2],[3,0,2,1],[3,1,0,2],[3,1,2,0],[3,2,0,1],[3,2,1,0]]
+lista_pytań=[["Rybą nie jest: ","uchatka","0"],["Który instrument stroi muzyk?","gitarę","1"],["Likier maraskino produkuje się z maraski, czyli odmiany:","wiśni","2"],["Skąd pochodzi Conan Barbarzyńca?","Z Cymerii","3"],["Który utwór Juliusza Słowackiego napisany jest prozą?","Anhelli","4"],["Ile to jest 1111 razy 1111, jeśli 1 razy 1 to 1, a 11 razy 11 to 121?","1234321","5"],["Który ssak się nie spoci?","królik","6"], ["Komiksowym „dzieckiem” rysownika Boba Kane’a jest:", "Batman","7"],["Kto jest mistrzem tego samego oręża, w jakim specjalizowała się mitologiczna Artemida?","Zorro","8"],["Kto był nadwornym malarzem króla Filipa IV Habsburga?","Diego Velazquez","9"],["Z gry na jakim instrumencie słynie Czesław Mozil?","Na akordeonie","10"],["Płetwą grzbietową nie pruje wody:","wal grenlandzki","11"],["Co według Leszka Kołakowskiego jest sklepieniem domu, w którym duch ludzki mieszka?","Czas","12"]]
+answers=[["piskorz","pstrąg","ryba tygrysia","uchatka"],["gitarę","bęben","perkusję","batutę"],["winogron","wiśni","pszenicy","czereśni"],["Z gór Ural","Z Egiptu","Z Cymerii","Z Salaminy"],["Godzina myśli","W Szwajcarii","Anhelli","Arab"],["1111111","1212121","1234321","1231321"],["owca","koń","człowiek","królik"],["Superman","Batman","Spider-man","Capitan Ameryka"],["Zorro","Legolas","Don Kichot","Longinus Podbipięta"],[" Marcello Bacciarelli","Jan van Eyck"," Diego Velazquez","Jacques-Louis David"],["na kornecie"," na akordeonie","na djembe","na ksylofonie"],["długoszpar"," kosogon","orka","wal grenlandzki"],["Rozum","Bóg","Miłość","Czas"]]
+
+wybrany=random.choice(lista_pytań)
+lista_pytań.remove(wybrany)
+odpowiedzi_do_pytania=pula_odpowiedzi[random.randint(0,23)]
+A=odpowiedzi_do_pytania[0]
+B=odpowiedzi_do_pytania[1]
+C=odpowiedzi_do_pytania[2]
+D=odpowiedzi_do_pytania[3]
+
+
+
+
+
+
+
+
+
+def akcjaodp():
+    wartosc= IntVar()
+    if wartosc.get()==1:
+        messagebox.showinfo("Brawo","To poprawna odp")
+    elif wartosc.get()==2:
+        messagebox.showinfo("Brawo","To poprawna odp")
+    elif wartosc.get()==3:
+        messagebox.showinfo("Brawo","To poprawna odp")
+    elif wartosc.get()==4:
+        messagebox.showinfo("Brawo","To poprawna odp")
+    glowneokno.deiconify()
+
+
+def losowanie_pyt():
+    wartosc= IntVar()
+    window2=drugieokno=Tk()
+    drugieokno.title("Gra")
+    drugieokno.geometry("600x337")
+    tlo= Label(drugieokno,background="#f2c2c2",width=600,height=337)
+    tlo.place(x=0,y=0)
+    opis= Label(drugieokno, text=wybrany[0],background="white")
+    opis.place(x=100,y=40)
+    odpI= Radiobutton(drugieokno, text=answers[int(wybrany[2])][A],variable=wartosc, value=1, command=akcjaodp)
+    odpI.place(x=100,y=100)
+    odpII= Radiobutton(drugieokno, text=answers[int(wybrany[2])][B],variable=wartosc, value=2, command=akcjaodp)
+    odpII.place(x=400,y=100)
+    odpIII= Radiobutton(drugieokno, text=answers[int(wybrany[2])][C],variable=wartosc, value=3, command=akcjaodp)
+    odpIII.place(x=100,y=200)
+    odpIV= Radiobutton(drugieokno, text=answers[int(wybrany[2])][D],variable=wartosc, value=4, command=akcjaodp)
+    odpIV.place(x=400,y=200)
+
+
+
+logo=Image.open("logo2.jpg")
+#logoTk=ImageTk.PhotoImage(logo)
+##tlo=Label(window2,background="green",width=600,height=337)
+#tlo.place(x=10,y=10)
+
+
+def wybor_kola_telefon(): #koło telefon brakuje usuwania okienka .destroy() usuwa od razu zanim sie pojawi jakby
+    textbox = tk.Text(window, width = 25, height = 20)
+    textbox.pack()
+    textbox.place(x=10, y=10)
+    textbox.tag_add("h1", "1.0", "1.0")
+    textbox.tag_config("h1", background="yellow", foreground="blue", font=("Times New Roman", 12),wrap=WORD)
+    textbox.insert(tk.END,"Cześć z tej strony Hubert Urbański twój przyjaciel właśnie gra w programie milionerzy i ma problem z pytaniem: ",("h1"))
+    textbox.insert(tk.END,wybrany[0],("h1"))
+    textbox.insert(tk.END," Oto możliwe odpowiedzi: ",("h1"))
+    textbox.insert(tk.END,answers[int(wybrany[2])],("h1"))
+    textbox.insert(tk.END," Przyjaciel:Hmmm ymmm ummm myslę, że będzie to: ",("h1"))
+    textbox.insert(tk.END,wybrany[1],("h1"))
+
+
+def wybor_kola_publicznosc(): #trzeba przerobic na GUI
+        wybor_kola="P"
+        print(wybor_kola)
+        publicznosc.destroy()
+def wybor_kola_fifty_fifty(): #trzeba przerobić na GUI
+    print("Uff masz 50% szans to czas na twój szczęśliwy strzał.\nPozostałe odpowiedzi to:")
+    kolejnosc=random.randint(1,2)
+    if kolejnosc == 1:
+        poprawna_odpowiedz=wybrany[1]
+        answers[int(wybrany[2])].remove(wybrany[1])
+        druga_odpowiedz=random.randint(0,2)
+        print(poprawna_odpowiedz,"lub",answers[int(wybrany[2])][druga_odpowiedz])
+    else:
+        poprawna_odpowiedz=wybrany[1]
+        answers[int(wybrany[2])].remove(wybrany[1])
+        druga_odpowiedz=random.randint(0,2)
+        print(answers[int(wybrany[2])][druga_odpowiedz],"lub",poprawna_odpowiedz)
+    fifty_fifty.destroy()
+
+
+window=glowneokno = Tk()
+glowneokno.geometry("699x473")
+glowneokno.title("Pytania")
+obraz=Image.open("miliony.png")
+tlo=Image.open("tlo3.png")
+tloTk=ImageTk.PhotoImage(tlo)
+obrazTk=ImageTk.PhotoImage(obraz)
+label = tk.Label(window, image=obrazTk)
+label.place(x=0,y=0)
+plotno=Canvas(glowneokno, width=400, height=400)
+plotno.pack()
+plotno.create_image(200,200,image=obrazTk)
+przycisk1=Button(glowneokno,text="LOSUJEMY PYTANIE", command=losowanie_pyt)
+przycisk1.place(x=295,y=290)
+telefon = Image.open("tel.png")
+telefonTk=ImageTk.PhotoImage(telefon)
+fifty_fifty = Image.open("502.png")
+fifty_fiftyTk=ImageTk.PhotoImage(fifty_fifty)
+publicznosc = Image.open("pub.png")
+publicznoscTk=ImageTk.PhotoImage(publicznosc)
+label = tk.Label(window, image=tloTk)
+label.place(x=450,y=12)
+publicznosc=Button(glowneokno,image=publicznoscTk,command = wybor_kola_publicznosc,background="blue")
+fifty_fifty=Button(glowneokno,image=fifty_fiftyTk,command=wybor_kola_fifty_fifty,background="blue")
+telefon=Button(glowneokno,image=telefonTk,command=wybor_kola_telefon,background="blue")
+publicznosc.place(x=525,y=25)
+fifty_fifty.place(x=590,y=25)
+telefon.place(x=460,y=25)
+
+glowneokno.mainloop()
