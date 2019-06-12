@@ -30,7 +30,10 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o12["bg"] = "blue"
                 o12["fg"] = "white"
                 o12["command"] = gradalej=0
+                o12["height"] = 2 
+                o12["width"] = 5
                 o12.grid(row=1,column=6)
+                
 
                 o11 = Button(go)
                 o11["text"] = "500 000 zł"
@@ -38,6 +41,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o11["bg"] = "blue"
                 o11["fg"] = "yellow"
                 o11["command"] = gradalej=0
+                o11["height"] = 2 
+                o11["width"] = 5
                 o11.grid(row=2, column=6)
 
                 o10 = Button(go)
@@ -46,6 +51,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o10["bg"] = "blue"
                 o10["fg"] = "yellow"
                 o10["command"] = gradalej=0
+                o10["height"] = 2 
+                o10["width"] = 5
                 o10.grid(row=3, column=6)
 
                 o9 = Button(go)
@@ -53,6 +60,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o9["activebackground"] = "magenta"
                 o9["bg"] = "blue"
                 o9["fg"] = "yellow"
+                o9["height"] = 2 
+                o9["width"] = 5
                 o9["command"] = gradalej=0
                 o9.grid(row=4,column=6)
 
@@ -61,6 +70,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o8["activebackground"] = "magenta"
                 o8["bg"] = "blue"
                 o8["fg"] = "yellow"
+                o8["height"] = 2 
+                o8["width"] = 5
                 o8["command"] = gradalej=0
                 o8.grid(row=5,column=6)
 
@@ -69,6 +80,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o7["activebackground"] = "magenta"
                 o7["bg"] = "blue"
                 o7["fg"] = "white"
+                o7["height"] = 2 
+                o7["width"] = 5
                 o7["command"] = gradalej=0
                 o7.grid(row=6, column=6)
 
@@ -77,6 +90,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o6["activebackground"] = "magenta"
                 o6["bg"] = "blue"
                 o6["fg"] = "yellow"
+                o6["height"] = 2 
+                o6["width"] = 5
                 o6["command"] = gradalej=0
                 o6.grid(row=7, column=6)
 
@@ -85,6 +100,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o5["activebackground"] = "magenta"
                 o5["bg"] = "blue"
                 o5["fg"] = "yellow"
+                o5["height"] = 2 
+                o5["width"] = 5
                 o5["command"] = gradalej=0
                 o5.grid(row=8,column=6)
 
@@ -93,6 +110,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o4["activebackground"] = "magenta"
                 o4["bg"] = "blue"
                 o4["fg"] = "yellow"
+                o4["height"] = 2 
+                o4["width"] = 5
                 o4["command"] = gradalej=0
                 o4.grid(row=9,column=6)
 
@@ -101,6 +120,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o3["activebackground"] = "magenta"
                 o3["bg"] = "blue"
                 o3["fg"] = "yellow"
+                o3["height"] = 2 
+                o3["width"] = 5
                 o3["command"] = gradalej=0
                 o3.grid(row=10, column=6)
 
@@ -109,6 +130,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o2["activebackground"] = "magenta"
                 o2["bg"] = "blue"
                 o2["fg"] = "white"
+                o2["height"] = 2 
+                o2["width"] = 5
                 o2["command"] = gradalej=0
                 o2.grid(row=11, column=6)
 
@@ -117,6 +140,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o1["activebackground"] = "magenta"
                 o1["bg"] = "green"
                 o1["fg"] = "yellow"
+                o1["height"] = 2 
+                o1["width"] = 5
                 o1["command"] = gradalej=0
                 o1.grid(row=12,column=6)
                 messagebox.showinfo("","Gratuluję, to jest poprawna odpowiedź!")
@@ -132,7 +157,10 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o12["bg"] = "blue"
                 o12["fg"] = "white"
                 o12["command"] = gradalej=0
+                o12["height"] = 2 
+                o12["width"] = 5
                 o12.grid(row=1,column=6)
+                
 
                 o11 = Button(go)
                 o11["text"] = "500 000 zł"
@@ -140,6 +168,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o11["bg"] = "blue"
                 o11["fg"] = "yellow"
                 o11["command"] = gradalej=0
+                o11["height"] = 2 
+                o11["width"] = 5
                 o11.grid(row=2, column=6)
 
                 o10 = Button(go)
@@ -148,6 +178,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o10["bg"] = "blue"
                 o10["fg"] = "yellow"
                 o10["command"] = gradalej=0
+                o10["height"] = 2 
+                o10["width"] = 5
                 o10.grid(row=3, column=6)
 
                 o9 = Button(go)
@@ -155,6 +187,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o9["activebackground"] = "magenta"
                 o9["bg"] = "blue"
                 o9["fg"] = "yellow"
+                o9["height"] = 2 
+                o9["width"] = 5
                 o9["command"] = gradalej=0
                 o9.grid(row=4,column=6)
 
@@ -163,6 +197,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o8["activebackground"] = "magenta"
                 o8["bg"] = "blue"
                 o8["fg"] = "yellow"
+                o8["height"] = 2 
+                o8["width"] = 5
                 o8["command"] = gradalej=0
                 o8.grid(row=5,column=6)
 
@@ -171,6 +207,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o7["activebackground"] = "magenta"
                 o7["bg"] = "blue"
                 o7["fg"] = "white"
+                o7["height"] = 2 
+                o7["width"] = 5
                 o7["command"] = gradalej=0
                 o7.grid(row=6, column=6)
 
@@ -179,6 +217,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o6["activebackground"] = "magenta"
                 o6["bg"] = "blue"
                 o6["fg"] = "yellow"
+                o6["height"] = 2 
+                o6["width"] = 5
                 o6["command"] = gradalej=0
                 o6.grid(row=7, column=6)
 
@@ -187,6 +227,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o5["activebackground"] = "magenta"
                 o5["bg"] = "blue"
                 o5["fg"] = "yellow"
+                o5["height"] = 2 
+                o5["width"] = 5
                 o5["command"] = gradalej=0
                 o5.grid(row=8,column=6)
 
@@ -195,6 +237,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o4["activebackground"] = "magenta"
                 o4["bg"] = "blue"
                 o4["fg"] = "yellow"
+                o4["height"] = 2 
+                o4["width"] = 5
                 o4["command"] = gradalej=0
                 o4.grid(row=9,column=6)
 
@@ -203,6 +247,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o3["activebackground"] = "magenta"
                 o3["bg"] = "blue"
                 o3["fg"] = "yellow"
+                o3["height"] = 2 
+                o3["width"] = 5
                 o3["command"] = gradalej=0
                 o3.grid(row=10, column=6)
 
@@ -211,6 +257,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o2["activebackground"] = "magenta"
                 o2["bg"] = "green"
                 o2["fg"] = "white"
+                o2["height"] = 2 
+                o2["width"] = 5
                 o2["command"] = gradalej=0
                 o2.grid(row=11, column=6)
 
@@ -219,6 +267,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o1["activebackground"] = "magenta"
                 o1["bg"] = "blue"
                 o1["fg"] = "yellow"
+                o1["height"] = 2 
+                o1["width"] = 5
                 o1["command"] = gradalej=0
                 o1.grid(row=12,column=6)
                 messagebox.showinfo("","Tak, jest to dobra odpowiedź! Masz już sumę gwarantowaną w wysokości 1000zł!")
@@ -234,7 +284,10 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o12["bg"] = "blue"
                 o12["fg"] = "white"
                 o12["command"] = gradalej=0
+                o12["height"] = 2 
+                o12["width"] = 5
                 o12.grid(row=1,column=6)
+                
 
                 o11 = Button(go)
                 o11["text"] = "500 000 zł"
@@ -242,6 +295,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o11["bg"] = "blue"
                 o11["fg"] = "yellow"
                 o11["command"] = gradalej=0
+                o11["height"] = 2 
+                o11["width"] = 5
                 o11.grid(row=2, column=6)
 
                 o10 = Button(go)
@@ -250,6 +305,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o10["bg"] = "blue"
                 o10["fg"] = "yellow"
                 o10["command"] = gradalej=0
+                o10["height"] = 2 
+                o10["width"] = 5
                 o10.grid(row=3, column=6)
 
                 o9 = Button(go)
@@ -257,6 +314,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o9["activebackground"] = "magenta"
                 o9["bg"] = "blue"
                 o9["fg"] = "yellow"
+                o9["height"] = 2 
+                o9["width"] = 5
                 o9["command"] = gradalej=0
                 o9.grid(row=4,column=6)
 
@@ -265,6 +324,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o8["activebackground"] = "magenta"
                 o8["bg"] = "blue"
                 o8["fg"] = "yellow"
+                o8["height"] = 2 
+                o8["width"] = 5
                 o8["command"] = gradalej=0
                 o8.grid(row=5,column=6)
 
@@ -273,6 +334,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o7["activebackground"] = "magenta"
                 o7["bg"] = "blue"
                 o7["fg"] = "white"
+                o7["height"] = 2 
+                o7["width"] = 5
                 o7["command"] = gradalej=0
                 o7.grid(row=6, column=6)
 
@@ -281,6 +344,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o6["activebackground"] = "magenta"
                 o6["bg"] = "blue"
                 o6["fg"] = "yellow"
+                o6["height"] = 2 
+                o6["width"] = 5
                 o6["command"] = gradalej=0
                 o6.grid(row=7, column=6)
 
@@ -289,6 +354,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o5["activebackground"] = "magenta"
                 o5["bg"] = "blue"
                 o5["fg"] = "yellow"
+                o5["height"] = 2 
+                o5["width"] = 5
                 o5["command"] = gradalej=0
                 o5.grid(row=8,column=6)
 
@@ -297,6 +364,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o4["activebackground"] = "magenta"
                 o4["bg"] = "blue"
                 o4["fg"] = "yellow"
+                o4["height"] = 2 
+                o4["width"] = 5
                 o4["command"] = gradalej=0
                 o4.grid(row=9,column=6)
 
@@ -305,6 +374,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o3["activebackground"] = "magenta"
                 o3["bg"] = "green"
                 o3["fg"] = "yellow"
+                o3["height"] = 2 
+                o3["width"] = 5
                 o3["command"] = gradalej=0
                 o3.grid(row=10, column=6)
 
@@ -313,6 +384,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o2["activebackground"] = "magenta"
                 o2["bg"] = "blue"
                 o2["fg"] = "white"
+                o2["height"] = 2 
+                o2["width"] = 5
                 o2["command"] = gradalej=0
                 o2.grid(row=11, column=6)
 
@@ -321,6 +394,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o1["activebackground"] = "magenta"
                 o1["bg"] = "blue"
                 o1["fg"] = "yellow"
+                o1["height"] = 2 
+                o1["width"] = 5
                 o1["command"] = gradalej=0
                 o1.grid(row=12,column=6)
                 messagebox.showinfo("","Tak, to jest to! 2000zł trafiają do Ciebie!")
@@ -336,7 +411,10 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o12["bg"] = "blue"
                 o12["fg"] = "white"
                 o12["command"] = gradalej=0
+                o12["height"] = 2 
+                o12["width"] = 5
                 o12.grid(row=1,column=6)
+                
 
                 o11 = Button(go)
                 o11["text"] = "500 000 zł"
@@ -344,6 +422,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o11["bg"] = "blue"
                 o11["fg"] = "yellow"
                 o11["command"] = gradalej=0
+                o11["height"] = 2 
+                o11["width"] = 5
                 o11.grid(row=2, column=6)
 
                 o10 = Button(go)
@@ -352,6 +432,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o10["bg"] = "blue"
                 o10["fg"] = "yellow"
                 o10["command"] = gradalej=0
+                o10["height"] = 2 
+                o10["width"] = 5
                 o10.grid(row=3, column=6)
 
                 o9 = Button(go)
@@ -359,6 +441,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o9["activebackground"] = "magenta"
                 o9["bg"] = "blue"
                 o9["fg"] = "yellow"
+                o9["height"] = 2 
+                o9["width"] = 5
                 o9["command"] = gradalej=0
                 o9.grid(row=4,column=6)
 
@@ -367,6 +451,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o8["activebackground"] = "magenta"
                 o8["bg"] = "blue"
                 o8["fg"] = "yellow"
+                o8["height"] = 2 
+                o8["width"] = 5
                 o8["command"] = gradalej=0
                 o8.grid(row=5,column=6)
 
@@ -375,6 +461,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o7["activebackground"] = "magenta"
                 o7["bg"] = "blue"
                 o7["fg"] = "white"
+                o7["height"] = 2 
+                o7["width"] = 5
                 o7["command"] = gradalej=0
                 o7.grid(row=6, column=6)
 
@@ -383,6 +471,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o6["activebackground"] = "magenta"
                 o6["bg"] = "blue"
                 o6["fg"] = "yellow"
+                o6["height"] = 2 
+                o6["width"] = 5
                 o6["command"] = gradalej=0
                 o6.grid(row=7, column=6)
 
@@ -391,6 +481,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o5["activebackground"] = "magenta"
                 o5["bg"] = "blue"
                 o5["fg"] = "yellow"
+                o5["height"] = 2 
+                o5["width"] = 5
                 o5["command"] = gradalej=0
                 o5.grid(row=8,column=6)
 
@@ -399,6 +491,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o4["activebackground"] = "magenta"
                 o4["bg"] = "green"
                 o4["fg"] = "yellow"
+                o4["height"] = 2 
+                o4["width"] = 5
                 o4["command"] = gradalej=0
                 o4.grid(row=9,column=6)
 
@@ -407,6 +501,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o3["activebackground"] = "magenta"
                 o3["bg"] = "blue"
                 o3["fg"] = "yellow"
+                o3["height"] = 2 
+                o3["width"] = 5
                 o3["command"] = gradalej=0
                 o3.grid(row=10, column=6)
 
@@ -415,6 +511,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o2["activebackground"] = "magenta"
                 o2["bg"] = "blue"
                 o2["fg"] = "white"
+                o2["height"] = 2 
+                o2["width"] = 5
                 o2["command"] = gradalej=0
                 o2.grid(row=11, column=6)
 
@@ -423,6 +521,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o1["activebackground"] = "magenta"
                 o1["bg"] = "blue"
                 o1["fg"] = "yellow"
+                o1["height"] = 2 
+                o1["width"] = 5
                 o1["command"] = gradalej=0
                 o1.grid(row=12,column=6)
                 messagebox.showinfo("","I kolejne pieniądze lądują w Twoim portfelu! 5000zł to już niezła sumka.")
@@ -437,7 +537,10 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o12["bg"] = "blue"
                 o12["fg"] = "white"
                 o12["command"] = gradalej=0
+                o12["height"] = 2 
+                o12["width"] = 5
                 o12.grid(row=1,column=6)
+                
 
                 o11 = Button(go)
                 o11["text"] = "500 000 zł"
@@ -445,6 +548,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o11["bg"] = "blue"
                 o11["fg"] = "yellow"
                 o11["command"] = gradalej=0
+                o11["height"] = 2 
+                o11["width"] = 5
                 o11.grid(row=2, column=6)
 
                 o10 = Button(go)
@@ -453,6 +558,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o10["bg"] = "blue"
                 o10["fg"] = "yellow"
                 o10["command"] = gradalej=0
+                o10["height"] = 2 
+                o10["width"] = 5
                 o10.grid(row=3, column=6)
 
                 o9 = Button(go)
@@ -460,6 +567,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o9["activebackground"] = "magenta"
                 o9["bg"] = "blue"
                 o9["fg"] = "yellow"
+                o9["height"] = 2 
+                o9["width"] = 5
                 o9["command"] = gradalej=0
                 o9.grid(row=4,column=6)
 
@@ -468,6 +577,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o8["activebackground"] = "magenta"
                 o8["bg"] = "blue"
                 o8["fg"] = "yellow"
+                o8["height"] = 2 
+                o8["width"] = 5
                 o8["command"] = gradalej=0
                 o8.grid(row=5,column=6)
 
@@ -476,6 +587,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o7["activebackground"] = "magenta"
                 o7["bg"] = "blue"
                 o7["fg"] = "white"
+                o7["height"] = 2 
+                o7["width"] = 5
                 o7["command"] = gradalej=0
                 o7.grid(row=6, column=6)
 
@@ -484,6 +597,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o6["activebackground"] = "magenta"
                 o6["bg"] = "blue"
                 o6["fg"] = "yellow"
+                o6["height"] = 2 
+                o6["width"] = 5
                 o6["command"] = gradalej=0
                 o6.grid(row=7, column=6)
 
@@ -492,6 +607,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o5["activebackground"] = "magenta"
                 o5["bg"] = "green"
                 o5["fg"] = "yellow"
+                o5["height"] = 2 
+                o5["width"] = 5
                 o5["command"] = gradalej=0
                 o5.grid(row=8,column=6)
 
@@ -500,6 +617,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o4["activebackground"] = "magenta"
                 o4["bg"] = "blue"
                 o4["fg"] = "yellow"
+                o4["height"] = 2 
+                o4["width"] = 5
                 o4["command"] = gradalej=0
                 o4.grid(row=9,column=6)
 
@@ -508,6 +627,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o3["activebackground"] = "magenta"
                 o3["bg"] = "blue"
                 o3["fg"] = "yellow"
+                o3["height"] = 2 
+                o3["width"] = 5
                 o3["command"] = gradalej=0
                 o3.grid(row=10, column=6)
 
@@ -516,6 +637,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o2["activebackground"] = "magenta"
                 o2["bg"] = "blue"
                 o2["fg"] = "white"
+                o2["height"] = 2 
+                o2["width"] = 5
                 o2["command"] = gradalej=0
                 o2.grid(row=11, column=6)
 
@@ -524,6 +647,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o1["activebackground"] = "magenta"
                 o1["bg"] = "blue"
                 o1["fg"] = "yellow"
+                o1["height"] = 2 
+                o1["width"] = 5
                 o1["command"] = gradalej=0
                 o1.grid(row=12,column=6)
                 messagebox.showinfo("","Piąte pytanie za Tobą! 10 000zł jest już Twoje.")
@@ -539,7 +664,10 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o12["bg"] = "blue"
                 o12["fg"] = "white"
                 o12["command"] = gradalej=0
+                o12["height"] = 2 
+                o12["width"] = 5
                 o12.grid(row=1,column=6)
+                
 
                 o11 = Button(go)
                 o11["text"] = "500 000 zł"
@@ -547,6 +675,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o11["bg"] = "blue"
                 o11["fg"] = "yellow"
                 o11["command"] = gradalej=0
+                o11["height"] = 2 
+                o11["width"] = 5
                 o11.grid(row=2, column=6)
 
                 o10 = Button(go)
@@ -555,6 +685,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o10["bg"] = "blue"
                 o10["fg"] = "yellow"
                 o10["command"] = gradalej=0
+                o10["height"] = 2 
+                o10["width"] = 5
                 o10.grid(row=3, column=6)
 
                 o9 = Button(go)
@@ -562,6 +694,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o9["activebackground"] = "magenta"
                 o9["bg"] = "blue"
                 o9["fg"] = "yellow"
+                o9["height"] = 2 
+                o9["width"] = 5
                 o9["command"] = gradalej=0
                 o9.grid(row=4,column=6)
 
@@ -570,6 +704,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o8["activebackground"] = "magenta"
                 o8["bg"] = "blue"
                 o8["fg"] = "yellow"
+                o8["height"] = 2 
+                o8["width"] = 5
                 o8["command"] = gradalej=0
                 o8.grid(row=5,column=6)
 
@@ -578,6 +714,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o7["activebackground"] = "magenta"
                 o7["bg"] = "blue"
                 o7["fg"] = "white"
+                o7["height"] = 2 
+                o7["width"] = 5
                 o7["command"] = gradalej=0
                 o7.grid(row=6, column=6)
 
@@ -586,6 +724,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o6["activebackground"] = "magenta"
                 o6["bg"] = "green"
                 o6["fg"] = "yellow"
+                o6["height"] = 2 
+                o6["width"] = 5
                 o6["command"] = gradalej=0
                 o6.grid(row=7, column=6)
 
@@ -594,6 +734,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o5["activebackground"] = "magenta"
                 o5["bg"] = "blue"
                 o5["fg"] = "yellow"
+                o5["height"] = 2 
+                o5["width"] = 5
                 o5["command"] = gradalej=0
                 o5.grid(row=8,column=6)
 
@@ -602,6 +744,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o4["activebackground"] = "magenta"
                 o4["bg"] = "blue"
                 o4["fg"] = "yellow"
+                o4["height"] = 2 
+                o4["width"] = 5
                 o4["command"] = gradalej=0
                 o4.grid(row=9,column=6)
 
@@ -610,6 +754,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o3["activebackground"] = "magenta"
                 o3["bg"] = "blue"
                 o3["fg"] = "yellow"
+                o3["height"] = 2 
+                o3["width"] = 5
                 o3["command"] = gradalej=0
                 o3.grid(row=10, column=6)
 
@@ -618,6 +764,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o2["activebackground"] = "magenta"
                 o2["bg"] = "blue"
                 o2["fg"] = "white"
+                o2["height"] = 2 
+                o2["width"] = 5
                 o2["command"] = gradalej=0
                 o2.grid(row=11, column=6)
 
@@ -626,6 +774,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o1["activebackground"] = "magenta"
                 o1["bg"] = "blue"
                 o1["fg"] = "yellow"
+                o1["height"] = 2 
+                o1["width"] = 5
                 o1["command"] = gradalej=0
                 o1.grid(row=12,column=6)
                 messagebox.showinfo("","Gratulacje! Jesteś już w połowie drogi do upragnionego miliona!")
@@ -641,7 +791,10 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o12["bg"] = "blue"
                 o12["fg"] = "white"
                 o12["command"] = gradalej=0
+                o12["height"] = 2 
+                o12["width"] = 5
                 o12.grid(row=1,column=6)
+                
 
                 o11 = Button(go)
                 o11["text"] = "500 000 zł"
@@ -649,6 +802,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o11["bg"] = "blue"
                 o11["fg"] = "yellow"
                 o11["command"] = gradalej=0
+                o11["height"] = 2 
+                o11["width"] = 5
                 o11.grid(row=2, column=6)
 
                 o10 = Button(go)
@@ -657,6 +812,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o10["bg"] = "blue"
                 o10["fg"] = "yellow"
                 o10["command"] = gradalej=0
+                o10["height"] = 2 
+                o10["width"] = 5
                 o10.grid(row=3, column=6)
 
                 o9 = Button(go)
@@ -664,6 +821,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o9["activebackground"] = "magenta"
                 o9["bg"] = "blue"
                 o9["fg"] = "yellow"
+                o9["height"] = 2 
+                o9["width"] = 5
                 o9["command"] = gradalej=0
                 o9.grid(row=4,column=6)
 
@@ -672,6 +831,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o8["activebackground"] = "magenta"
                 o8["bg"] = "blue"
                 o8["fg"] = "yellow"
+                o8["height"] = 2 
+                o8["width"] = 5
                 o8["command"] = gradalej=0
                 o8.grid(row=5,column=6)
 
@@ -680,6 +841,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o7["activebackground"] = "magenta"
                 o7["bg"] = "green"
                 o7["fg"] = "white"
+                o7["height"] = 2 
+                o7["width"] = 5
                 o7["command"] = gradalej=0
                 o7.grid(row=6, column=6)
 
@@ -688,6 +851,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o6["activebackground"] = "magenta"
                 o6["bg"] = "blue"
                 o6["fg"] = "yellow"
+                o6["height"] = 2 
+                o6["width"] = 5
                 o6["command"] = gradalej=0
                 o6.grid(row=7, column=6)
 
@@ -696,6 +861,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o5["activebackground"] = "magenta"
                 o5["bg"] = "blue"
                 o5["fg"] = "yellow"
+                o5["height"] = 2 
+                o5["width"] = 5
                 o5["command"] = gradalej=0
                 o5.grid(row=8,column=6)
 
@@ -704,6 +871,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o4["activebackground"] = "magenta"
                 o4["bg"] = "blue"
                 o4["fg"] = "yellow"
+                o4["height"] = 2 
+                o4["width"] = 5
                 o4["command"] = gradalej=0
                 o4.grid(row=9,column=6)
 
@@ -712,6 +881,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o3["activebackground"] = "magenta"
                 o3["bg"] = "blue"
                 o3["fg"] = "yellow"
+                o3["height"] = 2 
+                o3["width"] = 5
                 o3["command"] = gradalej=0
                 o3.grid(row=10, column=6)
 
@@ -720,6 +891,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o2["activebackground"] = "magenta"
                 o2["bg"] = "blue"
                 o2["fg"] = "white"
+                o2["height"] = 2 
+                o2["width"] = 5
                 o2["command"] = gradalej=0
                 o2.grid(row=11, column=6)
 
@@ -728,6 +901,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o1["activebackground"] = "magenta"
                 o1["bg"] = "blue"
                 o1["fg"] = "yellow"
+                o1["height"] = 2 
+                o1["width"] = 5
                 o1["command"] = gradalej=0
                 o1.grid(row=12,column=6)
                 messagebox.showinfo("","Nie do wiary! Masz już gwarantowane dokładnie 40 000zł!")
@@ -743,7 +918,10 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o12["bg"] = "blue"
                 o12["fg"] = "white"
                 o12["command"] = gradalej=0
+                o12["height"] = 2 
+                o12["width"] = 5
                 o12.grid(row=1,column=6)
+                
 
                 o11 = Button(go)
                 o11["text"] = "500 000 zł"
@@ -751,6 +929,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o11["bg"] = "blue"
                 o11["fg"] = "yellow"
                 o11["command"] = gradalej=0
+                o11["height"] = 2 
+                o11["width"] = 5
                 o11.grid(row=2, column=6)
 
                 o10 = Button(go)
@@ -759,6 +939,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o10["bg"] = "blue"
                 o10["fg"] = "yellow"
                 o10["command"] = gradalej=0
+                o10["height"] = 2 
+                o10["width"] = 5
                 o10.grid(row=3, column=6)
 
                 o9 = Button(go)
@@ -766,6 +948,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o9["activebackground"] = "magenta"
                 o9["bg"] = "blue"
                 o9["fg"] = "yellow"
+                o9["height"] = 2 
+                o9["width"] = 5
                 o9["command"] = gradalej=0
                 o9.grid(row=4,column=6)
 
@@ -774,6 +958,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o8["activebackground"] = "magenta"
                 o8["bg"] = "green"
                 o8["fg"] = "yellow"
+                o8["height"] = 2 
+                o8["width"] = 5
                 o8["command"] = gradalej=0
                 o8.grid(row=5,column=6)
 
@@ -782,6 +968,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o7["activebackground"] = "magenta"
                 o7["bg"] = "blue"
                 o7["fg"] = "white"
+                o7["height"] = 2 
+                o7["width"] = 5
                 o7["command"] = gradalej=0
                 o7.grid(row=6, column=6)
 
@@ -790,6 +978,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o6["activebackground"] = "magenta"
                 o6["bg"] = "blue"
                 o6["fg"] = "yellow"
+                o6["height"] = 2 
+                o6["width"] = 5
                 o6["command"] = gradalej=0
                 o6.grid(row=7, column=6)
 
@@ -798,6 +988,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o5["activebackground"] = "magenta"
                 o5["bg"] = "blue"
                 o5["fg"] = "yellow"
+                o5["height"] = 2 
+                o5["width"] = 5
                 o5["command"] = gradalej=0
                 o5.grid(row=8,column=6)
 
@@ -806,6 +998,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o4["activebackground"] = "magenta"
                 o4["bg"] = "blue"
                 o4["fg"] = "yellow"
+                o4["height"] = 2 
+                o4["width"] = 5
                 o4["command"] = gradalej=0
                 o4.grid(row=9,column=6)
 
@@ -814,6 +1008,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o3["activebackground"] = "magenta"
                 o3["bg"] = "blue"
                 o3["fg"] = "yellow"
+                o3["height"] = 2 
+                o3["width"] = 5
                 o3["command"] = gradalej=0
                 o3.grid(row=10, column=6)
 
@@ -822,6 +1018,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o2["activebackground"] = "magenta"
                 o2["bg"] = "blue"
                 o2["fg"] = "white"
+                o2["height"] = 2 
+                o2["width"] = 5
                 o2["command"] = gradalej=0
                 o2.grid(row=11, column=6)
 
@@ -830,6 +1028,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o1["activebackground"] = "magenta"
                 o1["bg"] = "blue"
                 o1["fg"] = "yellow"
+                o1["height"] = 2 
+                o1["width"] = 5
                 o1["command"] = gradalej=0
                 o1.grid(row=12,column=6)
                 messagebox.showinfo("","Przyznam szczerze, że nie potrafiłbym odpowiedzieć na to pytanie na Twoim miejscu. W tym programie doceniamy jednak poprawne odpowiedzi, dlatego 75 000 jest już Twoje!")
@@ -845,7 +1045,10 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o12["bg"] = "blue"
                 o12["fg"] = "white"
                 o12["command"] = gradalej=0
+                o12["height"] = 2 
+                o12["width"] = 5
                 o12.grid(row=1,column=6)
+                
 
                 o11 = Button(go)
                 o11["text"] = "500 000 zł"
@@ -853,6 +1056,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o11["bg"] = "blue"
                 o11["fg"] = "yellow"
                 o11["command"] = gradalej=0
+                o11["height"] = 2 
+                o11["width"] = 5
                 o11.grid(row=2, column=6)
 
                 o10 = Button(go)
@@ -861,6 +1066,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o10["bg"] = "blue"
                 o10["fg"] = "yellow"
                 o10["command"] = gradalej=0
+                o10["height"] = 2 
+                o10["width"] = 5
                 o10.grid(row=3, column=6)
 
                 o9 = Button(go)
@@ -868,6 +1075,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o9["activebackground"] = "magenta"
                 o9["bg"] = "green"
                 o9["fg"] = "yellow"
+                o9["height"] = 2 
+                o9["width"] = 5
                 o9["command"] = gradalej=0
                 o9.grid(row=4,column=6)
 
@@ -876,6 +1085,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o8["activebackground"] = "magenta"
                 o8["bg"] = "blue"
                 o8["fg"] = "yellow"
+                o8["height"] = 2 
+                o8["width"] = 5
                 o8["command"] = gradalej=0
                 o8.grid(row=5,column=6)
 
@@ -884,6 +1095,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o7["activebackground"] = "magenta"
                 o7["bg"] = "blue"
                 o7["fg"] = "white"
+                o7["height"] = 2 
+                o7["width"] = 5
                 o7["command"] = gradalej=0
                 o7.grid(row=6, column=6)
 
@@ -892,6 +1105,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o6["activebackground"] = "magenta"
                 o6["bg"] = "blue"
                 o6["fg"] = "yellow"
+                o6["height"] = 2 
+                o6["width"] = 5
                 o6["command"] = gradalej=0
                 o6.grid(row=7, column=6)
 
@@ -900,6 +1115,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o5["activebackground"] = "magenta"
                 o5["bg"] = "blue"
                 o5["fg"] = "yellow"
+                o5["height"] = 2 
+                o5["width"] = 5
                 o5["command"] = gradalej=0
                 o5.grid(row=8,column=6)
 
@@ -908,6 +1125,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o4["activebackground"] = "magenta"
                 o4["bg"] = "blue"
                 o4["fg"] = "yellow"
+                o4["height"] = 2 
+                o4["width"] = 5
                 o4["command"] = gradalej=0
                 o4.grid(row=9,column=6)
 
@@ -916,6 +1135,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o3["activebackground"] = "magenta"
                 o3["bg"] = "blue"
                 o3["fg"] = "yellow"
+                o3["height"] = 2 
+                o3["width"] = 5
                 o3["command"] = gradalej=0
                 o3.grid(row=10, column=6)
 
@@ -924,6 +1145,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o2["activebackground"] = "magenta"
                 o2["bg"] = "blue"
                 o2["fg"] = "white"
+                o2["height"] = 2 
+                o2["width"] = 5
                 o2["command"] = gradalej=0
                 o2.grid(row=11, column=6)
 
@@ -932,6 +1155,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o1["activebackground"] = "magenta"
                 o1["bg"] = "blue"
                 o1["fg"] = "yellow"
+                o1["height"] = 2 
+                o1["width"] = 5
                 o1["command"] = gradalej=0
                 o1.grid(row=12,column=6)
                 messagebox.showinfo("","Jak Ty to robisz? 125 000zł to Twój aktualny stan portfela. Mam nadzieję, że będzie tylko co raz lepiej!")
@@ -947,7 +1172,10 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o12["bg"] = "blue"
                 o12["fg"] = "white"
                 o12["command"] = gradalej=0
+                o12["height"] = 2 
+                o12["width"] = 5
                 o12.grid(row=1,column=6)
+                
 
                 o11 = Button(go)
                 o11["text"] = "500 000 zł"
@@ -955,6 +1183,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o11["bg"] = "blue"
                 o11["fg"] = "yellow"
                 o11["command"] = gradalej=0
+                o11["height"] = 2 
+                o11["width"] = 5
                 o11.grid(row=2, column=6)
 
                 o10 = Button(go)
@@ -963,6 +1193,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o10["bg"] = "green"
                 o10["fg"] = "yellow"
                 o10["command"] = gradalej=0
+                o10["height"] = 2 
+                o10["width"] = 5
                 o10.grid(row=3, column=6)
 
                 o9 = Button(go)
@@ -970,6 +1202,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o9["activebackground"] = "magenta"
                 o9["bg"] = "blue"
                 o9["fg"] = "yellow"
+                o9["height"] = 2 
+                o9["width"] = 5
                 o9["command"] = gradalej=0
                 o9.grid(row=4,column=6)
 
@@ -978,6 +1212,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o8["activebackground"] = "magenta"
                 o8["bg"] = "blue"
                 o8["fg"] = "yellow"
+                o8["height"] = 2 
+                o8["width"] = 5
                 o8["command"] = gradalej=0
                 o8.grid(row=5,column=6)
 
@@ -986,6 +1222,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o7["activebackground"] = "magenta"
                 o7["bg"] = "blue"
                 o7["fg"] = "white"
+                o7["height"] = 2 
+                o7["width"] = 5
                 o7["command"] = gradalej=0
                 o7.grid(row=6, column=6)
 
@@ -994,6 +1232,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o6["activebackground"] = "magenta"
                 o6["bg"] = "blue"
                 o6["fg"] = "yellow"
+                o6["height"] = 2 
+                o6["width"] = 5
                 o6["command"] = gradalej=0
                 o6.grid(row=7, column=6)
 
@@ -1002,6 +1242,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o5["activebackground"] = "magenta"
                 o5["bg"] = "blue"
                 o5["fg"] = "yellow"
+                o5["height"] = 2 
+                o5["width"] = 5
                 o5["command"] = gradalej=0
                 o5.grid(row=8,column=6)
 
@@ -1010,6 +1252,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o4["activebackground"] = "magenta"
                 o4["bg"] = "blue"
                 o4["fg"] = "yellow"
+                o4["height"] = 2 
+                o4["width"] = 5
                 o4["command"] = gradalej=0
                 o4.grid(row=9,column=6)
 
@@ -1018,6 +1262,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o3["activebackground"] = "magenta"
                 o3["bg"] = "blue"
                 o3["fg"] = "yellow"
+                o3["height"] = 2 
+                o3["width"] = 5
                 o3["command"] = gradalej=0
                 o3.grid(row=10, column=6)
 
@@ -1026,6 +1272,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o2["activebackground"] = "magenta"
                 o2["bg"] = "blue"
                 o2["fg"] = "white"
+                o2["height"] = 2 
+                o2["width"] = 5
                 o2["command"] = gradalej=0
                 o2.grid(row=11, column=6)
 
@@ -1034,6 +1282,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o1["activebackground"] = "magenta"
                 o1["bg"] = "blue"
                 o1["fg"] = "yellow"
+                o1["height"] = 2 
+                o1["width"] = 5
                 o1["command"] = gradalej=0
                 o1.grid(row=12,column=6)
                 messagebox.showinfo("","Nie sa mo wi te! Przebiłeś się bez problemu przez dotychczasowe pytania! Zostały jeszcze tylko 2 do miliona!")
@@ -1049,7 +1299,10 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o12["bg"] = "blue"
                 o12["fg"] = "white"
                 o12["command"] = gradalej=0
+                o12["height"] = 2 
+                o12["width"] = 5
                 o12.grid(row=1,column=6)
+                
 
                 o11 = Button(go)
                 o11["text"] = "500 000 zł"
@@ -1057,6 +1310,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o11["bg"] = "green"
                 o11["fg"] = "yellow"
                 o11["command"] = gradalej=0
+                o11["height"] = 2 
+                o11["width"] = 5
                 o11.grid(row=2, column=6)
 
                 o10 = Button(go)
@@ -1065,6 +1320,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o10["bg"] = "blue"
                 o10["fg"] = "yellow"
                 o10["command"] = gradalej=0
+                o10["height"] = 2 
+                o10["width"] = 5
                 o10.grid(row=3, column=6)
 
                 o9 = Button(go)
@@ -1072,6 +1329,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o9["activebackground"] = "magenta"
                 o9["bg"] = "blue"
                 o9["fg"] = "yellow"
+                o9["height"] = 2 
+                o9["width"] = 5
                 o9["command"] = gradalej=0
                 o9.grid(row=4,column=6)
 
@@ -1080,6 +1339,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o8["activebackground"] = "magenta"
                 o8["bg"] = "blue"
                 o8["fg"] = "yellow"
+                o8["height"] = 2 
+                o8["width"] = 5
                 o8["command"] = gradalej=0
                 o8.grid(row=5,column=6)
 
@@ -1088,6 +1349,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o7["activebackground"] = "magenta"
                 o7["bg"] = "blue"
                 o7["fg"] = "white"
+                o7["height"] = 2 
+                o7["width"] = 5
                 o7["command"] = gradalej=0
                 o7.grid(row=6, column=6)
 
@@ -1096,6 +1359,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o6["activebackground"] = "magenta"
                 o6["bg"] = "blue"
                 o6["fg"] = "yellow"
+                o6["height"] = 2 
+                o6["width"] = 5
                 o6["command"] = gradalej=0
                 o6.grid(row=7, column=6)
 
@@ -1104,6 +1369,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o5["activebackground"] = "magenta"
                 o5["bg"] = "blue"
                 o5["fg"] = "yellow"
+                o5["height"] = 2 
+                o5["width"] = 5
                 o5["command"] = gradalej=0
                 o5.grid(row=8,column=6)
 
@@ -1112,6 +1379,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o4["activebackground"] = "magenta"
                 o4["bg"] = "blue"
                 o4["fg"] = "yellow"
+                o4["height"] = 2 
+                o4["width"] = 5
                 o4["command"] = gradalej=0
                 o4.grid(row=9,column=6)
 
@@ -1120,6 +1389,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o3["activebackground"] = "magenta"
                 o3["bg"] = "blue"
                 o3["fg"] = "yellow"
+                o3["height"] = 2 
+                o3["width"] = 5
                 o3["command"] = gradalej=0
                 o3.grid(row=10, column=6)
 
@@ -1128,6 +1399,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o2["activebackground"] = "magenta"
                 o2["bg"] = "blue"
                 o2["fg"] = "white"
+                o2["height"] = 2 
+                o2["width"] = 5
                 o2["command"] = gradalej=0
                 o2.grid(row=11, column=6)
 
@@ -1136,6 +1409,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o1["activebackground"] = "magenta"
                 o1["bg"] = "blue"
                 o1["fg"] = "yellow"
+                o1["height"] = 2 
+                o1["width"] = 5
                 o1["command"] = gradalej=0
                 o1.grid(row=12,column=6)
                 messagebox.showinfo("","Tak! To jest definitywnie dobra odpowiedź! 500 000zł jest już Twoje! Teraz możesz podwoić swój dotychczasowy dorobek! Przed nami ostatnie pytanie!")
@@ -1151,7 +1426,10 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o12["bg"] = "green"
                 o12["fg"] = "white"
                 o12["command"] = gradalej=0
+                o12["height"] = 2 
+                o12["width"] = 5
                 o12.grid(row=1,column=6)
+                
 
                 o11 = Button(go)
                 o11["text"] = "500 000 zł"
@@ -1159,6 +1437,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o11["bg"] = "blue"
                 o11["fg"] = "yellow"
                 o11["command"] = gradalej=0
+                o11["height"] = 2 
+                o11["width"] = 5
                 o11.grid(row=2, column=6)
 
                 o10 = Button(go)
@@ -1167,6 +1447,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o10["bg"] = "blue"
                 o10["fg"] = "yellow"
                 o10["command"] = gradalej=0
+                o10["height"] = 2 
+                o10["width"] = 5
                 o10.grid(row=3, column=6)
 
                 o9 = Button(go)
@@ -1174,6 +1456,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o9["activebackground"] = "magenta"
                 o9["bg"] = "blue"
                 o9["fg"] = "yellow"
+                o9["height"] = 2 
+                o9["width"] = 5
                 o9["command"] = gradalej=0
                 o9.grid(row=4,column=6)
 
@@ -1182,6 +1466,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o8["activebackground"] = "magenta"
                 o8["bg"] = "blue"
                 o8["fg"] = "yellow"
+                o8["height"] = 2 
+                o8["width"] = 5
                 o8["command"] = gradalej=0
                 o8.grid(row=5,column=6)
 
@@ -1190,6 +1476,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o7["activebackground"] = "magenta"
                 o7["bg"] = "blue"
                 o7["fg"] = "white"
+                o7["height"] = 2 
+                o7["width"] = 5
                 o7["command"] = gradalej=0
                 o7.grid(row=6, column=6)
 
@@ -1198,6 +1486,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o6["activebackground"] = "magenta"
                 o6["bg"] = "blue"
                 o6["fg"] = "yellow"
+                o6["height"] = 2 
+                o6["width"] = 5
                 o6["command"] = gradalej=0
                 o6.grid(row=7, column=6)
 
@@ -1206,6 +1496,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o5["activebackground"] = "magenta"
                 o5["bg"] = "blue"
                 o5["fg"] = "yellow"
+                o5["height"] = 2 
+                o5["width"] = 5
                 o5["command"] = gradalej=0
                 o5.grid(row=8,column=6)
 
@@ -1214,6 +1506,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o4["activebackground"] = "magenta"
                 o4["bg"] = "blue"
                 o4["fg"] = "yellow"
+                o4["height"] = 2 
+                o4["width"] = 5
                 o4["command"] = gradalej=0
                 o4.grid(row=9,column=6)
 
@@ -1222,6 +1516,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o3["activebackground"] = "magenta"
                 o3["bg"] = "blue"
                 o3["fg"] = "yellow"
+                o3["height"] = 2 
+                o3["width"] = 5
                 o3["command"] = gradalej=0
                 o3.grid(row=10, column=6)
 
@@ -1230,6 +1526,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o2["activebackground"] = "magenta"
                 o2["bg"] = "blue"
                 o2["fg"] = "white"
+                o2["height"] = 2 
+                o2["width"] = 5
                 o2["command"] = gradalej=0
                 o2.grid(row=11, column=6)
 
@@ -1238,6 +1536,8 @@ def Licznik_Forsy(piniondz, nr_pytania, poprawnosc,gradalej=1):
                 o1["activebackground"] = "magenta"
                 o1["bg"] = "blue"
                 o1["fg"] = "yellow"
+                o1["height"] = 2 
+                o1["width"] = 5
                 o1["command"] = gradalej=0
                 o1.grid(row=12,column=6)
                 a+=500000
