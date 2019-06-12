@@ -6,27 +6,25 @@ from pygame import mixer
 from tkinter import *
 from tkinter import messagebox
 from PIL import Image, ImageTk
-class Millionersy(Frame):
+class Millionersy(Frame): #Klasa która ma w sobie wszystko
     root = Tk()
     pieniondz=0
     nr_pytanka=0
     poprawne=0
     licznik=0
+
     pula_odpowiedzi=[[0,1,2,3],[0,1,3,2],[0,2,1,3],[0,2,3,1],[0,3,1,2],[0,3,2,1],[1,0,2,3],[1,0,3,2],[1,2,0,3],[1,2,3,0],[1,3,0,2],[1,3,2,0],[2,0,1,3],[2,0,3,1],[2,1,0,3],[2,1,3,0],[2,3,0,1],[2,3,1,0],[3,0,1,2],[3,0,2,1],[3,1,0,2],[3,1,2,0],[3,2,0,1],[3,2,1,0]]
     lista_pytań=[["Rybą nie jest:","uchatka","0"],["Który instrument stroi muzyk?","gitarę","1"],["Likier maraskino produkuje się z maraski, czyli odmiany:","wiśni","2"],["Skąd pochodzi Conan Barbarzyńca?","Z Cymerii","3"],["Który utwór Juliusza Słowackiego napisany jest prozą?","Anhelli","4"],["Ile to jest 1111 razy 1111, jeśli 1 razy 1 to 1, a 11 razy 11 to 121?","1234321","5"],["Który ssak się nie spoci?","królik","6"], ["Komiksowym „dzieckiem” rysownika Boba Kane’a jest:", "Batman","7"],["Kto jest mistrzem tego samego oręża, w jakim specjalizowała się mitologiczna Artemida?","Zorro","8"],["Kto był nadwornym malarzem króla Filipa IV Habsburga?","Diego Velázquez","9"],["Z gry na jakim instrumencie słynie Czesław Mozil?","Na akordeonie","10"],["Płetwą grzbietową nie pruje wody:","wal grenlandzki","11"],["Co według Leszka Kołakowskiego jest sklepieniem domu, w którym duch ludzki mieszka?","Czas","12"]]
     answers=[["piskorz","pstrąg","ryba tygrysia","uchatka"],["gitarę","bęben","perkusję","batutę"],["winogron","wiśni","pszenicy","czereśni"],["Z gór Ural","Z Egiptu","Z Cymerii","Z Salaminy"],["Godzina myśli","W Szwajcarii","Anhelli","Arab"],["1111111","1212121","1234321","1231321"],["owca","koń","człowiek","królik"],["Superman","Batman","Spider-man","Capitan Ameryka"],["Zorro","Legolas","Don Kichot","Longinus Podbipięta"],[" Marcello Bacciarelli","Jan van Eyck"," Diego Velázquez","Jacques-Louis David"],["na kornecie"," na akordeonie","na djembe","na ksylofonie"],["długoszpar"," kosogon","orka","wal grenlandzki"],["Rozum","Bóg","Miłość","Czas"]]
     graszdalej=1
-    def __init__(self, master=None):
+    def __init__(self, master=None): #Konstruktor - Licznik_Forsy dodałem dlatego, żeby nie zapomnieć go zmodyfikować
         super().__init__(master)
         self.master = master
         self.grid()
         self.Przyciski()
         self.Licznik_Forsy(self,piniondz,nr_pytania,poprawnosc,gradalej=1)
-        publicznosc1 = PhotoImage(file="pub.png")
-        fiftyfifty1 = PhotoImage(file="502.png")
-        telefon1 = PhotoImage(file="tel.png")
 
-    def Przyciski(self):
+    def Przyciski(self): #Tworzenie Przycisków do wyboru (Nie ja to miałęm zrobić, ale uznałem, że tak lepiej będzie wyglądać - Trzeba poprzypisywać do nich odpowiedzi
         self.p11 = Radiobutton(self)
         self.p11["text"] = "Hello World\n(click me)"
         self.p11["activebackground"] = "yellow"
@@ -71,17 +69,17 @@ class Millionersy(Frame):
                             command = self.Prawda)
         self.dalej.grid(row=1,column=5)
 
-        self.quit = Button(self, text="QUIT", fg="red",
+        self.quit = Button(self, text="QUIT", fg="red", #Przycisk rezygnacji też miał być później zmodyfikowany
                               command=self.master.destroy)
         self.quit.grid(row=0,column=5)
 
-        self.publicznosc=Button(self, image=publicznosc1,command = self.wybor_kola_telefon)
-        self.fifty_fifty=Button(self, image=fiftyfifty1,command=self.wybor_kola_publicznosc)
-        self.telefon=Button(self,image=telefon1 ,command=self.wybor_kola_fifty_fifty)
+        self.publicznosc=Button(self, image=self.publicznosc1,command = self.wybor_kola_telefon) #Zmodyfikowana zawartość kół ratunkowych - Miejsce do którego nie doszedłem w kompilacji
+        self.fifty_fifty=Button(self, image=self.fiftyfifty1,command=self.wybor_kola_publicznosc)
+        self.telefon=Button(self,image=self.telefon1 ,command=self.wybor_kola_fifty_fifty)
         self.publicznosc.place(x=50,y=50)
         self.fifty_fifty.place(x=180,y=50)
         self.telefon.place(x=250,y=50)
-    def Prawda(self):
+    def Prawda(self): #Początkowy zamysł
         if wartosc.get()==1:
             messagebox.showinfo("","Prawidłowa Odpowiedź!")
         if wartosc.get()==2:
@@ -91,7 +89,7 @@ class Millionersy(Frame):
         if wartosc.get()==4:
             messagebox.showinfo("","Zła Odpowiedź!")
 
-    def Akcje(self):
+    def Akcje(self): #Podświetlanie i zmienianie przycisku w razie odpowiedzi
         if wartosc.get()==1:
             self.p11["bg"] = "yellow"
             self.p11["fg"] = "black"
@@ -132,7 +130,7 @@ class Millionersy(Frame):
             self.p14["bg"] = "yellow"
             self.p14["fg"] = "black"
             messagebox.showinfo("","Definitywnie?")
-    def wybor_kola_telefon(self):
+    def wybor_kola_telefon(self): #Mocno zmodyfikowana zawartość kół, aby odpowiednie był pod klasę
             print("Cześć z tej strony Hubert Urbański twój przyjaciel właśnie gra w programie milionerzy i ma problem z pytaniem:\n",self.wybrany[0],"Oto możliwe odpowiedzi:\n",self.answers[int(self.wybrany[2])],"\n","Masz 30 sekund postaraj się podać prawdziwą odpowiedź!")
             print("Przyjaciel:Hmmm ymmm ummm myslę, że będzie to:",self.wybrany[1])
             telefon=False
@@ -200,7 +198,7 @@ class Millionersy(Frame):
             fifty_fifty=False
             wybor_kola=""
 
-    def Licznik_Forsy(self,piniondz, nr_pytania, poprawnosc,gradalej=1):
+    def Licznik_Forsy(self,piniondz, nr_pytania, poprawnosc,gradalej=1): #Moja faktyczna część, którą miałem zrobić
         self.pieniondz=piniondz
         self.nr_pytanka=nr_pytania
         self.poprawne=poprawnosc
@@ -424,7 +422,7 @@ class Millionersy(Frame):
 # publicznoscTk=ImageTk.PhotoImage(publicznosc)
 
 
-    def wybor_kola_telefon(self):
+    def wybor_kola_telefon(self): #Niszczenie kół ratunkowych
         self.wybor_kola="T"
         self.telefon.destroy()
     def wybor_kola_publicznosc(self):
@@ -433,6 +431,7 @@ class Millionersy(Frame):
     def wybor_kola_fifty_fifty(self):
         self.wybor_kola="F"
         self.fifty_fifty.destroy()
+#Brakuje wielu rzeczy: Muzyki, Przyporządkowania pytań pod przyciski, zmodyfikowania wielkości progów punktowych etc...
 go = Tk()
 go.title("Milionerzy")
 go.geometry("300x250")
@@ -443,13 +442,15 @@ telefon=True
 wybor_kola=""
 ilosc_pieniedzy=0
 prawdopodobienstwo_poprawnej_odpowiedzi=0
+plotno=Canvas(go, width = 200, height = 200) #Tutaj wrzuciłem to na koniec bo wywołuje błędy
+plotno.grid()
+publicznosc1 = ImageTk.PhotoImage(master = Canvas, file="pub.png")
+fiftyfifty1 = ImageTk.PhotoImage(master = Canvas, file="502.png")
+telefon1 = ImageTk.PhotoImage(master = Canvas,file="tel.png")
+plotno.create_image(200,200,image=telefon1)
+plotno.create_image(200,200,image=publicznosc1)
+plotno.create_image(200,200,image=fiftyfifty1)
 Milio = Millionersy(master=go)
 
-go.mainloop()
 
-# def Piniondze(self):
-#     self.opo = Label(self)
-#     self.opo["text"] ="Opis Pola"
-#     self.po = Entry(self)
-#     self.po.grid(row=0,column=6)
-#     messagebox.showinfo("Aktualna Stawka",self.po.get()) #Informacja do Pola tekstowego
+Milio.mainloop()
